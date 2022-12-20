@@ -37,7 +37,8 @@ const Header = () => {
             <img src={smallLogo} alt="logo"
                  className={openMenu ? 'small_logo show_element' : 'small_logo hide_element'}/>
             <div className={'insta_icon'}>
-                <a target="_blank" href="https://www.instagram.com/lvlup_barbershop/" style={{color: 'whitesmoke', textDecoration: 'none'}}>
+                <a target="_blank" href="https://www.instagram.com/lvlup_barbershop/"
+                   style={{color: 'whitesmoke', textDecoration: 'none'}}>
                     <InstagramIcon className={openMenu ? 'hide_element' : 'show_element'} fontSize={'large'}/>
                 </a>
             </div>

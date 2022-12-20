@@ -1,6 +1,6 @@
 import React from 'react';
-
 import PhoneIphoneOutlinedIcon from '@mui/icons-material/PhoneIphoneOutlined';
+
 import './Footer.css';
 import logo from "../../logo.png";
 
