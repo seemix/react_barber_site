@@ -1,8 +1,10 @@
 import React from 'react';
 
 import './Barbers.css';
-import ben from '../../images/team-1.webp';
-import nic from '../../images/team-2.webp';
+import ben from '../../images/team-3.webp';
+import nic from '../../images/team-4.webp';
+import pet from '../../images/team-5.webp';
+import dan from '../../images/team-6.webp';
 
 const Barbers = () => {
     return (
@@ -24,6 +26,20 @@ const Barbers = () => {
                         <div className={'team_overlay'}>
                             <h3>Nicolae</h3>
                             <h4>junior barber</h4>
+                        </div>
+                    </div>
+                    <div>
+                        <img className={'gray_scale'} width={'350px'} src={pet} alt="ben"/>
+                        <div className={'team_overlay'}>
+                            <h3>Petru</h3>
+                            <h4>student barber</h4>
+                        </div>
+                    </div>
+                    <div>
+                        <img className={'gray_scale'} width={'350px'} src={dan} alt="ben"/>
+                        <div className={'team_overlay'}>
+                            <h3>Daniel</h3>
+                            <h4>assistant</h4>
                         </div>
                     </div>
 
