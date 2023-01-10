@@ -18,7 +18,7 @@ const App = () => {
             <Barbers/>
             <Contacts/>
             <Footer/>
-            <ScrollToTop component={'↑'} style={{backgroundColor: '#9e8a78', color: 'whitesmoke', fontSize: '20px'}} smooth/>
+            <ScrollToTop className={'top_scroll'} component={'↑'} smooth/>
         </div>
     );
 };

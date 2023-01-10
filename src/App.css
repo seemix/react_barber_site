@@ -102,6 +102,12 @@ h4 {
     /*position: relative;*/
     margin-bottom: 40px;
 }
+.top_scroll {
+    display: block;
+    background-color: #9e8a78;
+    color: whitesmoke;
+    font-size: 20px;
+}
 
 @media screen and (max-width: 767px) {
     h1 {
@@ -121,5 +127,8 @@ h4 {
         background: url(images/heading-line.png) center center no-repeat;
         /*position: relative;*/
         margin-bottom: 10px;
+    }
+    .top_scroll {
+        display: none;
     }
 }
