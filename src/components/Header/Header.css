@@ -1,7 +1,7 @@
 
-.logo img {
-    width: 50px;
-}
+/*.logo img {*/
+/*    width: 50px;*/
+/*}*/
 
 .navigation {
     color: #ddd;
@@ -50,10 +50,10 @@
 
 .small_logo {
     position: absolute;
-    top: 15px;
-    left: 15px;
-    width: 70px;
-    height: 70px;
+    top: 30px;
+    left: 30px;
+    width: 80px;
+    height: 80px;
 }
 
 .menu_icon {
@@ -95,7 +95,8 @@
 }
 
 .main_logo {
-    width: 240px;
+    margin-top: 5px;
+    width: 290px;
 }
 
 @media screen and (max-width: 767px) {
@@ -126,10 +127,11 @@
     }
 
     .main_logo {
-        max-width: 190px;
+        max-width: 200px;
+        margin-left: 5px;
     }
     .navigation {
         line-height: 50px;
+        padding: 10px;
     }
-
 }

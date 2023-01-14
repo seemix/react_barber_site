@@ -65,7 +65,7 @@ const Header = () => {
             </div>
             <div className={'menu_icon'} onClick={handleMenuButton}>
                 <CloseIcon fontSize={'large'}
-                           style={{display: openMenu ? "block" : "none", position: "absolute", top: 15, right: 15}}/>
+                           style={{display: openMenu ? "block" : "none", position: "absolute", top: 30, right: 30}}/>
             </div>
         </nav>
     );
