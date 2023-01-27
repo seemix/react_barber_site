@@ -11,7 +11,7 @@ const Slider = () => {
                 <div className='pic' id='pic4'/>
                 <div className={'overlay'}>
                     <div className={'slider_welcome'}>
-                        <h1>Welcome to LevelUP Barberhop</h1>
+                        <h1>Welcome to LevelUP Barbershop</h1>
                         <div>
                             <button className={'button-5 booking'}>ЗАПИСАТЬСЯ</button>
                         </div>
