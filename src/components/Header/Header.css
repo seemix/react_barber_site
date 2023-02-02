@@ -36,20 +36,6 @@
     z-index: 2;
 }
 
-/*.navbar_items_scroll {*/
-/*    background-color: #1E1E1EFF;*/
-/*    height: 90px;*/
-/*    transition: all 0.8s ease-in-out;*/
-/*}*/
-
-
-/*.small_logo {*/
-/*    position: absolute;*/
-/*    top: 30px;*/
-/*    left: 30px;*/
-/*    width: 80px;*/
-/*    height: 80px;*/
-/*}*/
 
 .menu_icon {
     color: whitesmoke;
@@ -95,11 +81,9 @@
         flex-direction: column;
         justify-content: start;
         position: fixed;
-        right: -600px;
+        right: -800px;
         width: 100%;
-        /*right: -700px;*/
         background: rgba(30, 30, 30, .9);
-        z-index: -2;
         top: 85px;
     }
     .show_burger_menu {
@@ -116,7 +100,6 @@
         width: 100%;
         font-size: 15px;
         display: block;
-        z-index: -2;
     }
 
     .navLink:hover {
