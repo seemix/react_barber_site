@@ -2,13 +2,15 @@ import React from 'react';
 
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import './Services.css';
+import { useTranslation } from 'react-i18next';
 
 const Services = () => {
+    const { t } = useTranslation();
     return (
         <div className={'services'} id={'services'}>
             <div className={'section_caption'}>
                 <h3>LevelUP Barbershop</h3>
-                <h2>Наши услуги</h2>
+                <h2>{t('ourServices')}</h2>
                 <div className={'heading_line'}></div>
                 <div className={'cards_wrapper'}>
                     <div className={'card'}>
@@ -16,22 +18,22 @@ const Services = () => {
                             <i className="bs bs-scissors-1"></i>
                         </div>
                         <div className={'price_item'}>
-                            <h4>Стрижка и укладка
+                            <h4>{t('haircutStyle')}
                                 {/*<span className={'price'}>180 лей</span>*/}
                             </h4>
-                            <span className={'time'}><AccessTimeIcon style={{marginRight: '5px'}} fontSize={'18px'}/>45 минут</span>
+                            <span className={'time'}><AccessTimeIcon style={{ marginRight: '5px' }} fontSize={'18px'}/>45 минут</span>
                         </div>
                         <div className={'price_item'}>
-                            <h4>Моделирование бороды
+                            <h4>{t('beardTrim')}
                                 {/*<span className={'price'}>130 лей</span>*/}
                             </h4>
-                            <span className={'time'}><AccessTimeIcon style={{marginRight: '5px'}} fontSize={'18px'}/>30 минут</span>
+                            <span className={'time'}><AccessTimeIcon style={{ marginRight: '5px' }} fontSize={'18px'}/>30 минут</span>
                         </div>
                         <div className={'price_item'}>
-                            <h4>Стрижка+борода </h4><h4> (комплекс)
-                            {/*<span className={'price'}>250 лей</span>*/}
-                        </h4>
-                            <span className={'time'}><AccessTimeIcon style={{marginRight: '5px'}} fontSize={'18px'}/>60 минут</span>
+                            <h4>{t('haircutBeardTrim')}
+                                {/*<span className={'price'}>250 лей</span>*/}
+                            </h4>
+                            <span className={'time'}><AccessTimeIcon style={{ marginRight: '5px' }} fontSize={'18px'}/>60 минут</span>
                         </div>
                     </div>
                     <div className={'card'}>
@@ -39,23 +41,23 @@ const Services = () => {
                             <i className="bs bs-razor-2"></i>
                         </div>
                         <div className={'price_item'}>
-                            <h4>Бритьё
+                            <h4>{t('shave')}
                                 {/*<span className={'price'}>150 лей</span>*/}
                             </h4>
-                            <span className={'time'}><AccessTimeIcon style={{marginRight: '5px'}} fontSize={'18px'}/>30 минут</span>
+                            <span className={'time'}><AccessTimeIcon style={{ marginRight: '5px' }} fontSize={'18px'}/>30 минут</span>
                         </div>
                         <div className={'price_item'}>
-                            <h4>Камуфлирование бороды
+                            <h4>{t('beardTinting')}
                                 {/*<span className={'price'}>100 лей</span>*/}
                             </h4>
-                            <span className={'time'}><AccessTimeIcon style={{marginRight: '5px'}} fontSize={'18px'}/>20 минут</span>
+                            <span className={'time'}><AccessTimeIcon style={{ marginRight: '5px' }} fontSize={'18px'}/>20 минут</span>
                         </div>
                         <div className={'price_item'}>
                             {/*<h4>Запись вне рабочих часов <span className={'price'}>100 лей</span></h4>*/}
-                            <h4>Королевское бритьё
+                            <h4>{t('royalShave')}
                                 {/*<span className={'price'}>100 лей</span>*/}
                             </h4>
-                            <span className={'time'}><AccessTimeIcon style={{marginRight: '5px'}} fontSize={'18px'}/>30 минут</span>
+                            <span className={'time'}><AccessTimeIcon style={{ marginRight: '5px' }} fontSize={'18px'}/>30 минут</span>
                         </div>
                     </div>
                     <div className={'card'}>
@@ -63,22 +65,22 @@ const Services = () => {
                             <i className="bs bs-hairbrush-1"></i>
                         </div>
                         <div className={'price_item'}>
-                            <h4>Ваксинг: 1 зона
+                            <h4>{t('faceWaxing1')}
                                 {/*<span className={'price'}>50 лей</span>*/}
                             </h4>
-                            <span className={'time'}><AccessTimeIcon style={{marginRight: '5px'}} fontSize={'18px'}/>10 минут</span>
+                            <span className={'time'}><AccessTimeIcon style={{ marginRight: '5px' }} fontSize={'18px'}/>10 минут</span>
                         </div>
                         <div className={'price_item'}>
-                            <h4>Ваксинг: комплекс
+                            <h4>{t('faceWaxing3')}
                                 {/*<span className={'price'}>150 лей</span>*/}
                             </h4>
-                            <span className={'time'}><AccessTimeIcon style={{marginRight: '5px'}} fontSize={'18px'}/>25 минут</span>
+                            <span className={'time'}><AccessTimeIcon style={{ marginRight: '5px' }} fontSize={'18px'}/>25 минут</span>
                         </div>
                         <div className={'price_item'}>
-                            <h4>Укладка
+                            <h4>{t("hairStyling")}
                                 {/*<span className={'price'}>150 лей</span>*/}
                             </h4>
-                            <span className={'time'}><AccessTimeIcon style={{marginRight: '5px'}} fontSize={'18px'}/>20 минут</span>
+                            <span className={'time'}><AccessTimeIcon style={{ marginRight: '5px' }} fontSize={'18px'}/>20 минут</span>
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 import './Barbers.css';
 import ben from '../../images/team-3.webp';
@@ -7,11 +8,12 @@ import pet from '../../images/team-5.webp';
 import dan from '../../images/team-6.webp';
 
 const Barbers = () => {
+    const { t } = useTranslation();
     return (
         <div className={'barbers'}>
             <div className={'section_caption'}>
                 <h3>LevelUP Barbershop</h3>
-                <h2>Наши барберы</h2>
+                <h2>{t('ourBarbers')}</h2>
                 <div className={'heading_line'}></div>
                 <div className={'cards_wrapper'}>
                     <div>
