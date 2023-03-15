@@ -16,15 +16,21 @@ const Services = () => {
                             <i className="bs bs-scissors-1"></i>
                         </div>
                         <div className={'price_item'}>
-                            <h4>Стрижка и укладка <span className={'price'}>180 лей</span></h4>
+                            <h4>Стрижка и укладка
+                                {/*<span className={'price'}>180 лей</span>*/}
+                            </h4>
                             <span className={'time'}><AccessTimeIcon style={{marginRight: '5px'}} fontSize={'18px'}/>45 минут</span>
                         </div>
                         <div className={'price_item'}>
-                            <h4>Моделирование бороды <span className={'price'}>130 лей</span></h4>
+                            <h4>Моделирование бороды
+                                {/*<span className={'price'}>130 лей</span>*/}
+                            </h4>
                             <span className={'time'}><AccessTimeIcon style={{marginRight: '5px'}} fontSize={'18px'}/>30 минут</span>
                         </div>
                         <div className={'price_item'}>
-                            <h4>Стрижка+борода </h4><h4> (комплекс)<span className={'price'}>250 лей</span></h4>
+                            <h4>Стрижка+борода </h4><h4> (комплекс)
+                            {/*<span className={'price'}>250 лей</span>*/}
+                        </h4>
                             <span className={'time'}><AccessTimeIcon style={{marginRight: '5px'}} fontSize={'18px'}/>60 минут</span>
                         </div>
                     </div>
@@ -33,15 +39,22 @@ const Services = () => {
                             <i className="bs bs-razor-2"></i>
                         </div>
                         <div className={'price_item'}>
-                            <h4>Бритьё <span className={'price'}>150 лей</span></h4>
+                            <h4>Бритьё
+                                {/*<span className={'price'}>150 лей</span>*/}
+                            </h4>
                             <span className={'time'}><AccessTimeIcon style={{marginRight: '5px'}} fontSize={'18px'}/>30 минут</span>
                         </div>
                         <div className={'price_item'}>
-                            <h4>Камуфлирование седины <span className={'price'}>100 лей</span></h4>
-                            <span className={'time'}><AccessTimeIcon style={{marginRight: '5px'}} fontSize={'18px'}/>30 минут</span>
+                            <h4>Камуфлирование бороды
+                                {/*<span className={'price'}>100 лей</span>*/}
+                            </h4>
+                            <span className={'time'}><AccessTimeIcon style={{marginRight: '5px'}} fontSize={'18px'}/>20 минут</span>
                         </div>
                         <div className={'price_item'}>
-                            <h4>Запись вне рабочих часов <span className={'price'}>100 лей</span></h4>
+                            {/*<h4>Запись вне рабочих часов <span className={'price'}>100 лей</span></h4>*/}
+                            <h4>Королевское бритьё
+                                {/*<span className={'price'}>100 лей</span>*/}
+                            </h4>
                             <span className={'time'}><AccessTimeIcon style={{marginRight: '5px'}} fontSize={'18px'}/>30 минут</span>
                         </div>
                     </div>
@@ -50,12 +63,22 @@ const Services = () => {
                             <i className="bs bs-hairbrush-1"></i>
                         </div>
                         <div className={'price_item'}>
-                            <h4>Ваксинг: 1 зона <span className={'price'}>50 лей</span></h4>
+                            <h4>Ваксинг: 1 зона
+                                {/*<span className={'price'}>50 лей</span>*/}
+                            </h4>
                             <span className={'time'}><AccessTimeIcon style={{marginRight: '5px'}} fontSize={'18px'}/>10 минут</span>
                         </div>
                         <div className={'price_item'}>
-                            <h4>Ваксинг: комплекс <span className={'price'}>150 лей</span></h4>
+                            <h4>Ваксинг: комплекс
+                                {/*<span className={'price'}>150 лей</span>*/}
+                            </h4>
                             <span className={'time'}><AccessTimeIcon style={{marginRight: '5px'}} fontSize={'18px'}/>25 минут</span>
+                        </div>
+                        <div className={'price_item'}>
+                            <h4>Укладка
+                                {/*<span className={'price'}>150 лей</span>*/}
+                            </h4>
+                            <span className={'time'}><AccessTimeIcon style={{marginRight: '5px'}} fontSize={'18px'}/>20 минут</span>
                         </div>
                     </div>
                 </div>

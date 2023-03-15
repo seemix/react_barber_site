@@ -25,14 +25,14 @@ const Barbers = () => {
                         <img className={'gray_scale'} width={'350px'} src={nic} alt="ben"/>
                         <div className={'team_overlay'}>
                             <h3>Nicolae</h3>
-                            <h4>junior barber</h4>
+                            <h4>barber</h4>
                         </div>
                     </div>
                     <div>
                         <img className={'gray_scale'} width={'350px'} src={pet} alt="ben"/>
                         <div className={'team_overlay'}>
                             <h3>Petru</h3>
-                            <h4>student barber</h4>
+                            <h4>barber</h4>
                         </div>
                     </div>
                     <div>
