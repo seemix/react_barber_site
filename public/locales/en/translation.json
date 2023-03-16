@@ -1,7 +1,6 @@
 {
   "book": "BOOK ON!",
   "welcome": "Welcome to ",
-
   "main": "main",
   "services": "services",
   "barbers": "barbers",
@@ -15,14 +14,13 @@
   "faceWaxing1": "Face waxing (1 area)",
   "faceWaxing3": "Face waxing (3 areas)",
   "hairStyling": "Hair Styling",
-
+  "minutes": "min",
   "address": "Address",
   "streetNumber": "Balti, Decebal 142",
   "phone": "Phone",
   "workHours": "Work hours",
   "monSat": "Mon - Sat:  8am – 7pm",
   "sun": "Sun: 11am – 6pm",
-
   "ourServices": "Our Services",
   "ourBarbers": "Our Barbers",
   "ourContacts": "Contacts",
