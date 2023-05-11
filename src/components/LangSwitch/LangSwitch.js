@@ -15,9 +15,9 @@ const LangSwitch = () => {
     return (
         <div>
             <select className="select-css" onChange={handleChange}>
-                <option value={'ru'}>RU</option>
-                <option value={'ro'}>RO</option>
-                <option value={'en'}>EN</option>
+                <option value={'ru'} selected={i18n.language === 'ro'}>RU</option>
+                <option value={'ro'} selected={i18n.language === 'ro'}>RO</option>
+                <option value={'en'} selected={i18n.language === 'en'}>EN</option>
             </select>
 
         </div>

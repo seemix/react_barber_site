@@ -23,13 +23,13 @@ const Barbers = () => {
                             <h4>owner</h4>
                         </div>
                     </div>
-                    <div>
-                        <img className={'gray_scale'} width={'350px'} src={nic} alt="ben"/>
-                        <div className={'team_overlay'}>
-                            <h3>Nicolae</h3>
-                            <h4>barber</h4>
-                        </div>
-                    </div>
+                    {/*<div>*/}
+                    {/*    <img className={'gray_scale'} width={'350px'} src={nic} alt="ben"/>*/}
+                    {/*    <div className={'team_overlay'}>*/}
+                    {/*        <h3>Nicolae</h3>*/}
+                    {/*        <h4>barber</h4>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                     <div>
                         <img className={'gray_scale'} width={'350px'} src={pet} alt="ben"/>
                         <div className={'team_overlay'}>
@@ -41,7 +41,7 @@ const Barbers = () => {
                         <img className={'gray_scale'} width={'350px'} src={dan} alt="ben"/>
                         <div className={'team_overlay'}>
                             <h3>Daniel</h3>
-                            <h4>assistant</h4>
+                            <h4>barber</h4>
                         </div>
                     </div>
 
