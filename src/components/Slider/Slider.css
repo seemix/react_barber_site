@@ -1,60 +1,3 @@
-.overlay_container {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: calc(100vh - 80px);
-    margin: 0 auto;
-}
-
-.pic {
-    position: relative;
-
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-animation: fade 32s infinite;
-    /*animation: fade 32s infinite;*/
-}
-
-
-@-webkit-keyframes fade {
-    0% {
-        opacity: 1;
-    }
-    19% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 0;
-    }
-    94% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fade {
-    0% {
-        opacity: 1;
-    }
-    19% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 0;
-    }
-    94% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 .overlay {
     width: 100%;
     height: calc(100vh - 80px);;
@@ -84,13 +27,13 @@
 }
 
 .slider_container {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 90px);
     width: 100%;
 }
 
 .pic {
     width: 100%;
-    height: calc(100vh);
+    height: calc(100vh - 90px);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
