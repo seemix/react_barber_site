@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import './Barbers.css';
 import ben from '../../images/team-3.webp';
-import nic from '../../images/team-4.webp';
+import vit from '../../images/team-2.webp';
 import pet from '../../images/team-5.webp';
 import dan from '../../images/team-6.webp';
 
@@ -23,13 +23,13 @@ const Barbers = () => {
                             <h4>owner</h4>
                         </div>
                     </div>
-                    {/*<div>*/}
-                    {/*    <img className={'gray_scale'} width={'350px'} src={nic} alt="ben"/>*/}
-                    {/*    <div className={'team_overlay'}>*/}
-                    {/*        <h3>Nicolae</h3>*/}
-                    {/*        <h4>barber</h4>*/}
-                    {/*    </div>*/}
-                    {/*</div>*/}
+                    <div>
+                        <img className={'gray_scale'} width={'350px'} src={vit} alt="ben"/>
+                        <div className={'team_overlay'}>
+                            <h3>Vitaly</h3>
+                            <h4>barber</h4>
+                        </div>
+                    </div>
                     <div>
                         <img className={'gray_scale'} width={'350px'} src={pet} alt="ben"/>
                         <div className={'team_overlay'}>
