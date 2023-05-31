@@ -2,6 +2,11 @@
     border-bottom: 2px solid #eee;
     padding: 40px 0;
     width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.team_overlay {
+    padding: 10px;
 }
 .team_overlay h4 {
     text-align: center;
@@ -22,7 +27,7 @@
 .gray_scale:hover {
     filter: grayscale(1);
 }
-
+.swiper-button-next, .swiper-button-prev { color: #9e8a78; }
 @media screen and (max-width: 767px) {
     .barbers {
         padding: 15px 0;
