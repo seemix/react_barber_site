@@ -7,7 +7,6 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import { barbers } from './barbersData';
-
 import './Barbers.css';
 import SingleBarber from './SingleBarber';
 
@@ -28,11 +27,11 @@ const Barbers = () => {
                     },
                     '@0.50': {
                         slidesPerView: 1.2,
-                        spaceBetween: 5,
+                        spaceBetween: 10,
                     },
                     '@0.60': {
                         slidesPerView: 1.3,
-                        spaceBetween: 5,
+                        spaceBetween: 10,
                     },
                     '@0.75': {
                         slidesPerView: 1.8,
