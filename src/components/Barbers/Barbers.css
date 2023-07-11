@@ -4,6 +4,8 @@
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
+    min-height: calc(100vh - 80px);
+
 }
 .team_overlay {
     padding: 10px;
@@ -28,6 +30,7 @@
     filter: grayscale(1);
 }
 .swiper-button-next, .swiper-button-prev { color: #9e8a78; }
+
 @media screen and (max-width: 767px) {
     .barbers {
         padding: 15px 0;

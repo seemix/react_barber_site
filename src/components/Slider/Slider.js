@@ -1,6 +1,5 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-fade';
@@ -34,7 +33,7 @@ const Slider = () => {
                 loop={true}
             >
                 {slides.map(slide => <SwiperSlide key={slide}>
-                    <div className={'pic'} style={{backgroundImage: `url(${slide})`}}><WelcomeButton/></div>
+                    <div className={'pic'} style={{ backgroundImage: `url(${slide})` }}><WelcomeButton/></div>
                 </SwiperSlide>)}
             </Swiper>
         </div>
