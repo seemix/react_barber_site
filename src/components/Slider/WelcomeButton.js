@@ -2,30 +2,9 @@ import React from 'react';
 import './Slider.css';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import { buttonAnimation, headerAnimation } from '../../constants/animations';
 
-const headerAnimation = {
-    hidden: {
-        x: -200,
-        opacity: 0
-    },
-    visible: custom => ({
-        x: 0,
-        opacity: 1,
-        transition: { delay: custom * 0.2 }
-    })
-};
 
-const buttonAnimation = {
-    hidden: {
-        x: 200,
-        opacity: 0
-    },
-    visible: custom => ({
-        x: 0,
-        opacity: 1,
-        transition: { delay: custom * 0.2 }
-    })
-}
 const WelcomeButton = () => {
     const { t } = useTranslation();
     return (

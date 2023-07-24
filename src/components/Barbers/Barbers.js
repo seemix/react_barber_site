@@ -38,7 +38,7 @@ const Barbers = () => {
                 variants={bottomAnimation}
                 className={'heading_line'}>
             </motion.div>
-            <motion.div custom={3.5} initial={'hidden'} whileInView={'visible'} variants={rightToLeftSlide}>
+            <motion.div custom={2} initial={'hidden'} whileInView={'visible'} variants={rightToLeftSlide}>
                 <Swiper
                     autoHeight={true}
                     slidesPerView={1}
