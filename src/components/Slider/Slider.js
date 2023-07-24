@@ -11,9 +11,9 @@ import './Slider.css';
 // import required modules
 import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper';
 import './Slider.css';
-import slides from './slides/slides';
 import WelcomeButton from './WelcomeButton';
 
+const slides = ['/slides/1.webp','/slides/2.webp','/slides/3.webp','/slides/4.webp','/slides/5.webp'];
 const Slider = () => {
     return (
         <div>

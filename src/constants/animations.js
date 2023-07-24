@@ -24,7 +24,7 @@ export const bottomAnimation = {
 
 export const headerAnimation = {
     hidden: {
-        x: -100,
+        x: -70,
         opacity: 0
     },
     visible: custom => ({

@@ -78,7 +78,7 @@ const Barbers = () => {
                         }
 
                     }}
-                    loop={false}
+                    loop={true}
                     navigation
                     modules={[Pagination, Navigation]}
                     className="swiper_wrap"
