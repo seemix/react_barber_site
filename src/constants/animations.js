@@ -45,3 +45,15 @@ export const blockAnimation = {
         transition: { delay: custom * 0.2 }
     })
 };
+
+export const rightToLeftSlide = {
+    hidden: {
+        opacity: 0,
+        x: 180
+    },
+    visible: custom => ({
+        opacity: 1,
+        x: 0,
+        transition: { delay: custom * 0.2 }
+    })
+};
