@@ -13,18 +13,23 @@ import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper';
 import './Slider.css';
 import WelcomeButton from './WelcomeButton';
 
-const slides = ['/slides/1.webp','/slides/2.webp','/slides/3.webp','/slides/4.webp','/slides/5.webp'];
+const slides = ['/slides/1.webp', '/slides/2.webp', '/slides/3.webp', '/slides/4.webp', '/slides/5.webp'];
 const Slider = () => {
     return (
         <div>
             <Swiper
+                speed={1500}
                 spaceBetween={30}
                 slidesPerView={1}
                 autoplay={{
-                    delay: 4500,
+                    delay: 5500,
                     disableOnInteraction: false,
                 }}
                 effect={'fade'}
+
+                fadeEffect={{
+                    crossFade: false,
+                }}
                 pagination={{
                     clickable: true,
                 }}
