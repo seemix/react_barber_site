@@ -24,13 +24,13 @@ export const bottomAnimation = {
 
 export const headerAnimation = {
     hidden: {
-        x: -70,
+        x: -60,
         opacity: 0
     },
     visible: custom => ({
         x: 0,
         opacity: 1,
-        transition: { delay: custom * 0.3, duration: 0.3, ease: 'easeInOut'  }
+        transition: { delay: custom * 0.3, duration: 0.4, ease: 'easeInOut'  }
     })
 };
 
