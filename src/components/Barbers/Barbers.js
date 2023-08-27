@@ -11,7 +11,7 @@ import './Barbers.css';
 import SingleBarber from './SingleBarber';
 import { motion } from 'framer-motion';
 
-import { topAnimation, titleAnimation, bottomAnimation, rightToLeftSlide } from '../../constants/animations';
+import { topAnimation, titleAnimation, bottomAnimation } from '../../constants/animations';
 
 const Barbers = () => {
     const { t } = useTranslation();
@@ -38,7 +38,8 @@ const Barbers = () => {
                 variants={bottomAnimation}
                 className={'heading_line'}>
             </motion.div>
-            <motion.div custom={2} initial={'hidden'} whileInView={'visible'} variants={rightToLeftSlide}>
+            <motion.div custom={2} initial={'hidden'} whileInView={'visible'} variants={titleAnimation}>
+               <div style={{maxWidth: '100vw', boxSizing: 'border-box', overflowX: 'hidden'}}>
                 <Swiper
                     autoHeight={true}
                     slidesPerView={1}
@@ -92,6 +93,7 @@ const Barbers = () => {
                     }
 
                 </Swiper>
+               </div>
             </motion.div>
         </div>
     );

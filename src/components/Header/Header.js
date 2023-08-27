@@ -46,7 +46,7 @@ const Header = () => {
                             to={'top'}
                             smooth={true} spy={false}
                             duration={800}
-                            offset={-90}>{t('main')}
+                            offset={-80}>{t('main')}
                         </Link>
                         <Link
                             onClick={handleMenuButton}
@@ -54,7 +54,7 @@ const Header = () => {
                             to={'services'}
                             smooth={true} spy={false}
                             duration={800}
-                            offset={-90}>{t('services')}
+                            offset={-80}>{t('services')}
                         </Link>
                         <Link
                             onClick={handleMenuButton}
@@ -62,7 +62,7 @@ const Header = () => {
                             to={'barbers'}
                             smooth={true} spy={false}
                             duration={800}
-                            offset={-90}>{t('barbers')}
+                            offset={-80}>{t('barbers')}
                         </Link>
                         <Link
                             onClick={handleMenuButton}
@@ -70,9 +70,8 @@ const Header = () => {
                             to={'contacts'}
                             smooth={true} spy={false}
                             duration={800}
-                            offset={-90}>{t('contacts')}
+                            offset={-80}>{t('contacts')}
                         </Link>
-
                     </li>
                 </ul>
             </div>
@@ -80,18 +79,14 @@ const Header = () => {
                 <div className={'menu_icon'} onClick={handleMenuButton}>
                     <MenuIcon fontSize={'large'} style={{
                         display: !openMenu ? 'block' : 'none',
-                        position: 'absolute',
-                        top: 30,
-                        right: 30
+                        marginRight: '20px'
                     }}/>
                 </div>
                 <div className={'menu_icon'} onClick={handleMenuButton}>
                     <CloseIcon fontSize={'large'}
                                style={{
                                    display: openMenu ? 'block' : 'none',
-                                   position: 'absolute',
-                                   top: 30,
-                                   right: 30
+                                   marginRight: '20px'
                                }}
                     />
                 </div>
