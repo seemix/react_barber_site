@@ -80,7 +80,7 @@
         flex-direction: column;
         justify-content: start;
         position: fixed;
-        right: 100vw;
+        right: calc(100vw + 20px);
         width: 100%;
         background: rgba(30, 30, 30, .9);
         top: 65px;
