@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useTranslation } from 'react-i18next';
@@ -15,6 +15,7 @@ const Header = () => {
 
     const [openMenu, setOpenMenu] = useState(false);
     const [showMenu, setShowMenu] = useState(['menu_wrapper']);
+    const [scroll, setScroll] = useState(false);
 
     const closeMenu = () => {
         setOpenMenu(false);
@@ -27,8 +28,18 @@ const Header = () => {
 
     const menuRef = useOutsideClick(closeMenu);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 80) setScroll(true);
+            else setScroll(false);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return (
-        <nav className={'navbar_items'} id={'menu'}>
+        <nav className={scroll ? 'navbar_items navbar_scroll' : 'navbar_items'} id={'menu'}>
             <h1>
                 <img className={'main_logo'} src={logo} alt="logo"/>
             </h1>

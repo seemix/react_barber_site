@@ -17,30 +17,32 @@ const slides = ['/slides/1.webp', '/slides/2.webp', '/slides/3.webp', '/slides/4
 const Slider = () => {
     return (
         <div>
-            <Swiper
-                speed={1500}
-                spaceBetween={30}
-                slidesPerView={1}
-                autoplay={{
-                    delay: 5500,
-                    disableOnInteraction: false,
-                }}
-                effect={'fade'}
+            <div className={'slider_container'}>
+                <Swiper
+                    speed={1500}
+                    spaceBetween={30}
+                    slidesPerView={1}
+                    autoplay={{
+                        delay: 5500,
+                        disableOnInteraction: false,
+                    }}
+                    effect={'fade'}
 
-                fadeEffect={{
-                    crossFade: false,
-                }}
-                pagination={{
-                    clickable: true,
-                }}
-                modules={[Autoplay, EffectFade, Navigation, Pagination]}
-                className={'slider_container'}
-                loop={true}
-            >
-                {slides.map(slide => <SwiperSlide key={slide}>
-                    <div className={'pic'} style={{ backgroundImage: `url(${slide})` }}><WelcomeButton/></div>
-                </SwiperSlide>)}
-            </Swiper>
+                    fadeEffect={{
+                        crossFade: false,
+                    }}
+                    pagination={{
+                        clickable: true,
+                    }}
+                    modules={[Autoplay, EffectFade, Navigation, Pagination]}
+                    className={'slider_container'}
+                    loop={true}
+                >
+                    {slides.map(slide => <SwiperSlide key={slide}>
+                        <div className={'pic'} style={{ backgroundImage: `url(${slide})` }}><WelcomeButton/></div>
+                    </SwiperSlide>)}
+                </Swiper>
+            </div>
         </div>
     );
 };
