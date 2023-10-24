@@ -11,7 +11,7 @@ import './Barbers.css';
 import SingleBarber from './SingleBarber';
 import { motion } from 'framer-motion';
 
-import { topAnimation, titleAnimation, bottomAnimation, blockAnimation } from '../../constants/animations';
+import { topAnimation, titleAnimation, bottomAnimation } from '../../constants/animations';
 
 const Barbers = () => {
     const { t } = useTranslation();
@@ -25,7 +25,7 @@ const Barbers = () => {
             >LevelUP Barbershop
             </motion.h3>
             <motion.h2
-                custom={2.5}
+                custom={3.5}
                 initial={'hidden'}
                 whileInView={'visible'}
                 variants={titleAnimation}
@@ -38,7 +38,8 @@ const Barbers = () => {
                 variants={bottomAnimation}
                 className={'heading_line'}>
             </motion.div>
-            <motion.div custom={2} initial={'hidden'} whileInView={'visible'} variants={blockAnimation}>
+
+            <motion.div custom={2.5} initial={'hidden'} whileInView={'visible'} variants={bottomAnimation}>
                <div className={'barbers_container'}>
                 <Swiper
                     autoHeight={true}
