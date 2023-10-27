@@ -43,13 +43,15 @@ const Header = () => {
             <h1>
                 <img className={'main_logo'} src={logo} alt="logo"/>
             </h1>
-            <div className={'insta_icon'}>
-                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/lvlup_barbershop/"
-                   style={{ color: 'whitesmoke', textDecoration: 'none' }}>
-                    <InstagramIcon fontSize={'large'}/>
-                </a>
+            <div style={{display: 'flex', gap: '20px'}}>
+                <div className={'insta_icon'}>
+                    <a target="_blank" rel="noreferrer" href="https://www.instagram.com/lvlup_barbershop/"
+                       style={{ color: 'whitesmoke', textDecoration: 'none' }}>
+                        <InstagramIcon fontSize={'large'}/>
+                    </a>
+                </div>
+                <div><LangSwitch/></div>
             </div>
-            <LangSwitch/>
             <div className={'navigation'}>
                 <ul className={showMenu.join(' ')} ref={menuRef}>
                     <li>
@@ -92,7 +94,7 @@ const Header = () => {
                 <div className={'menu_icon'} onClick={getOpenMenu}>
                     <MenuIcon fontSize={'large'} style={{
                         display: !openMenu ? 'block' : 'none',
-                        marginRight: '20px',
+                        // marginRight: '10px',
                         cursor: 'pointer'
 
                     }}/>
@@ -101,7 +103,7 @@ const Header = () => {
                     <CloseIcon fontSize={'large'}
                                style={{
                                    display: openMenu ? 'block' : 'none',
-                                   marginRight: '20px',
+                                   // marginRight: '10px',
                                    cursor: 'pointer'
                                }}
                     />

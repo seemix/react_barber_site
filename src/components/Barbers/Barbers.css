@@ -13,6 +13,7 @@
     max-width: 1600px;
     overflow-x: hidden;
     box-sizing: border-box;
+    width: 100%;
 }
 .team_overlay {
     padding: 10px;
@@ -45,5 +46,8 @@
 @media screen and (max-width: 767px) {
     .barbers {
         padding: 15px 0;
+    }
+    .barbers_container {
+        max-width: 95vw;
     }
 }
