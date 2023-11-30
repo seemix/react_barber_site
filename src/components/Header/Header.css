@@ -21,7 +21,7 @@
 }
 
 .navbar_items {
-    background-color: var(--black);
+    background-color: rgba(var(--black), 0);
     width: 100%;
     box-sizing: border-box;
     height: 80px;
@@ -91,6 +91,7 @@
         background: rgba(30, 30, 30, .9);
         top: 67px;
     }
+
     .show_burger_menu {
         right: 0;
         top: 67px;
@@ -98,12 +99,13 @@
 
     .navbar_items {
         justify-content: space-between;
-        background-color: rgba(30,30,30,100);
+        background-color: rgba(30, 30, 30, 100);
         height: 80px;
 
     }
+
     .navbar_scroll {
-        background-color: rgba(30,30,30,100);
+        background-color: rgba(30, 30, 30, 100);
         transition: all 0.4s ease-in-out;
     }
 
