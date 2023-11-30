@@ -1,7 +1,8 @@
 import React from 'react';
-import './Slider.css';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+
+import './Slider.css';
 import { buttonAnimation, headerAnimation } from '../../constants/animations';
 
 
@@ -12,7 +13,7 @@ const WelcomeButton = () => {
             <div className={'overlay'}>
                 <div className={'slider_welcome'}>
                     <motion.h1
-                        custom={1.5}
+                        custom={3}
                         initial={'hidden'}
                         whileInView={'visible'}
                         variants={headerAnimation}
@@ -23,7 +24,7 @@ const WelcomeButton = () => {
                         whileInView={'visible'}
                         variants={buttonAnimation}>
                         <button
-                            className={'button-5 booking'}>{t('book')}</button>
+                            className={'button booking'}>{t('book')}</button>
                     </motion.div>
                 </div>
             </div>

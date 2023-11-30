@@ -7,7 +7,7 @@
     flex-direction: column;
     margin: 0 auto;
     min-height: calc(100vh - 80px);
-    background-color: #fcf9f5;
+    background-color: var(--light_gray);
 }
 .barbers_container {
     max-width: 1600px;
@@ -31,8 +31,7 @@
 }
 
 .gray_scale {
-    /*margin-bottom: 10px;*/
-    /*margin-top: 35px;*/
+
 }
 .gray_scale:hover {
     filter: grayscale(1);
@@ -41,7 +40,7 @@
     width: 340px;
     margin: 5px;
 }
-.swiper-button-next, .swiper-button-prev { color: #9e8a78; }
+.swiper-button-next, .swiper-button-prev { color: var(--orange); }
 
 @media screen and (max-width: 767px) {
     .barbers {

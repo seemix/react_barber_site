@@ -6,9 +6,9 @@ import CloseIcon from '@mui/icons-material/Close';
 import { Link } from 'react-scroll';
 
 import './Header.css';
-import logo from '../../logo.png';
+import logo from '../../images/logo.png';
 import LangSwitch from '../LangSwitch/LangSwitch';
-import { useOutsideClick } from '../../hooks/ckuck-outside';
+import { useOutsideClick } from '../../hooks/click-outside';
 
 const Header = () => {
     const { t } = useTranslation();

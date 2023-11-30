@@ -1,6 +1,6 @@
 .footer {
     width: 100%;
-    background: #1E1E1EFF;
+    background: var(--black);
     display: flex;
     justify-content: space-evenly;
     padding: 30px;
@@ -9,7 +9,7 @@
 }
 
 .footer p {
-    color: #999;
+    color: var(--light_gray);
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;

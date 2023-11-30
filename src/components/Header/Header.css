@@ -21,7 +21,7 @@
 }
 
 .navbar_items {
-    background-color: rgba(30,30,30,0) ;
+    background-color: var(--black);
     width: 100%;
     box-sizing: border-box;
     height: 80px;
@@ -38,19 +38,19 @@
 
 
 .navbar_scroll {
-    background-color: rgba(30,30,30,100);
+    background-color: var(--black);
     transition: all 0.4s ease-in-out;
     height: 80px;
 }
 
 .menu_icon {
-    color: whitesmoke;
+    color: var(--light_gray);
     display: none;
 }
 
 .insta_icon {
     cursor: pointer;
-    color: whitesmoke;
+    color: var(--light_gray);
     display: block;
     margin-left: 10px;
 }

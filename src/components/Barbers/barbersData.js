@@ -2,7 +2,6 @@ import vit from '../../images/team-2.webp';
 import ben from '../../images/team-3.webp';
 import pet from '../../images/team-5.webp';
 import alex from '../../images/team-7.webp';
-import bodya from '.././../images/team-8.webp';
 
 export const barbers = [
     {
@@ -29,10 +28,10 @@ export const barbers = [
         description: 'barber',
         picture: alex
     },
-    {
-        id: 5,
-        name: 'Bogdan',
-        description: 'barber',
-        picture: bodya
-    }
+    // {
+    //     id: 5,
+    //     name: 'Bogdan',
+    //     description: 'barber',
+    //     picture: bodya
+    // }
 ]

@@ -77,6 +77,6 @@ export const rightToLeftSlide = {
     visible: custom => ({
         opacity: 1,
         x: 0,
-        transition: { delay: custom * 0.2, duration: 0.5, ease: 'easeInOut'  }
+        transition: { delay: custom * 0.2, duration: 0.6, ease: 'easeInOut'  }
     })
 };

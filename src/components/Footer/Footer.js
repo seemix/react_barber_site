@@ -3,7 +3,7 @@ import PhoneIphoneOutlinedIcon from '@mui/icons-material/PhoneIphoneOutlined';
 import { useTranslation } from 'react-i18next';
 
 import './Footer.css';
-import logo from '../../logo.png';
+import logo from '../../images/logo.png';
 
 const Footer = () => {
     const { t } = useTranslation();
@@ -24,7 +24,7 @@ const Footer = () => {
             </div>
             <div className={'footer_widget'}>
                 <h5>{t('makeAppointment')}</h5>
-                <button className={'button-5 bottom booking'}>{t('book')}</button>
+                <button className={'button bottom booking'}>{t('book')}</button>
             </div>
         </div>
     );

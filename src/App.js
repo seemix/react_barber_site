@@ -1,13 +1,8 @@
 import React from 'react';
-import Header from './components/Header/Header';
 import ScrollToTop from 'react-scroll-to-top';
 
 import './App.css';
-import Slider from './components/Slider/Slider';
-import Services from './components/Services/Services';
-import Barbers from './components/Barbers/Barbers';
-import Contacts from './components/Contacts/Contacts'
-import Footer from './components/Footer/Footer';
+import { Barbers, Contacts, Footer, Header, Services, Slider } from './components';
 
 const App = () => {
 
@@ -19,7 +14,7 @@ const App = () => {
             <Barbers/>
             <Contacts/>
             <Footer/>
-            <ScrollToTop className={'top_scroll'} component={'↑'} smooth style={{ backgroundColor: '#9e8a78' }}/>
+            <ScrollToTop className={'top_scroll'} component={'↑'} smooth />
         </div>
     );
 };
