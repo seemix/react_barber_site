@@ -9,5 +9,6 @@ code {
 
 }
 .swiper-pagination-bullet-active {
-  background-color: rgb(252, 251, 251) !important;
+  /*background-color: rgb(252, 251, 251) !important;*/
+  background-color: var(--orange) !important;
 }

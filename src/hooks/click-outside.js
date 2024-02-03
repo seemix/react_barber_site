@@ -5,7 +5,10 @@ export const useOutsideClick = (cb) => {
 
     useEffect(() => {
         const handleClick = (e) => {
-            if (ref.current && !ref.current.contains(e.target)) {
+            // if (ref.current && !ref.current.contains(e.target)) {
+            //     cb();
+            // }
+            if (ref.current) {
                 cb();
             }
         };

@@ -1,6 +1,6 @@
 
 .navigation {
-    color: #ddd;
+    color: var(--light_gray);
     font-family: 'Inter', sans-serif;
     display: inline-block;
     padding: 0 10px;
@@ -83,18 +83,29 @@
 
 @media screen and (max-width: 767px) {
     .menu_wrapper {
+        z-index: -1;
         flex-direction: column;
-        justify-content: start;
+        align-items: center;
+        width: calc(100vw);
+        box-sizing: border-box;
+        background: rgba(30, 30, 30, 0.95);
         position: fixed;
-        right: calc(100vw + 20px);
-        width: 100%;
-        background: rgba(30, 30, 30, .9);
         top: 67px;
+        left: 0;
+          transition: opacity 0.4s ease-in-out,
+        transform 0.4s ease-in-out;
+        padding: 0;
+
     }
 
     .show_burger_menu {
-        right: 0;
-        top: 67px;
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .hide_burger_menu {
+        opacity: 0;
+        transform: translateX(100%);
     }
 
     .navbar_items {
@@ -110,21 +121,25 @@
     }
 
     .nav_link {
-        padding: 5px;
-        width: 100%;
+        padding: 5px 0;
+        width: 100vw;
         font-size: 15px;
         display: block;
-        transition: box-shadow 0.7s ease-in-out;
+        transition: box-shadow 0.6s ease-in-out;
+        /*border: 1px solid white;*/
     }
 
     .nav_link:hover {
-        box-shadow: 0 0 0 whitesmoke inset, 800px 0 0 rgba(255, 255, 255, 0.05) inset;
+        box-shadow: 0 0 0 whitesmoke inset, 100vw 0 0 rgba(255, 255, 255, 0.05) inset;
     }
 
     .menu_icon {
-        display: block;
+        display: flex;
         margin-right: 20px;
         cursor: pointer;
+        width: 50px;
+        justify-content: center;
+
     }
 
     .show_menu {
@@ -141,14 +156,7 @@
         padding: 10px;
         top: 75px;
     }
-}
 
-/*@media screen and (max-width: 420px) {*/
-/*    .main_logo {*/
-/*        max-width: 160px;*/
-/*        margin-left: 5px;*/
-/*    }*/
-/*    .insta_icon {*/
-/*        margin-left: 0;*/
-/*    }*/
-/*}*/
+    /*----------------*/
+
+}
