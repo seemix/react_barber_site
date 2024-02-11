@@ -1,50 +1,26 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import { barbers } from './barbersData';
 import './Barbers.css';
-import SingleBarber from './SingleBarber';
-import { motion } from 'framer-motion';
+import SingleBarber from './SingleBarber/SingleBarber';
 
-import { topAnimation, titleAnimation, bottomAnimation } from '../../constants/animations';
+import { SectionHeader } from '../index';
 
 const Barbers = () => {
-    const { t } = useTranslation();
     return (
-        <div className={'barbers'}>
-            <motion.h3
-                custom={2}
-                initial={'hidden'}
-                whileInView={'visible'}
-                variants={topAnimation}
-            >LevelUP Barbershop
-            </motion.h3>
-            <motion.h2
-                custom={3.5}
-                initial={'hidden'}
-                whileInView={'visible'}
-                variants={titleAnimation}
-            >{t('ourBarbers')}
-            </motion.h2>
-            <motion.div
-                custom={2}
-                initial={'hidden'}
-                whileInView={'visible'}
-                variants={bottomAnimation}
-                className={'heading_line'}>
-            </motion.div>
-
-            <motion.div custom={2.5} initial={'hidden'} whileInView={'visible'} variants={bottomAnimation}>
-               <div className={'barbers_container'}>
+        <section id={'barbers'}>
+            <SectionHeader caption={'ourBarbers'}/>
+            <div className={'barbers_container'}>
                 <Swiper
                     autoHeight={true}
                     slidesPerView={1}
                     spaceBetween={10}
+                    style={{ zIndex: 0 }}
                     breakpoints={{
                         '@0.00': {
                             slidesPerView: 1.2,
@@ -86,17 +62,15 @@ const Barbers = () => {
                     className="swiper_wrap"
                 >
                     {
-                        barbers.map(barber =>
+                        barbers.map((barber, index) =>
                             <SwiperSlide key={barber.id}>
-                                <SingleBarber barber={barber}
-                                />
+                                <SingleBarber barber={barber} index={index}/>
                             </SwiperSlide>)
                     }
 
                 </Swiper>
-               </div>
-            </motion.div>
-        </div>
+            </div>
+        </section>
     );
 };
 

@@ -1,0 +1,33 @@
+.cards_wrapper {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    /*width: 1600px;*/
+}
+
+
+
+
+
+.price {
+    font-family: "Prata", sans-serif;
+    font-size: 18px;
+    color: #9e8a78;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    .services {
+        padding: 15px 0;
+    }
+    .price {
+        font-size: 17px;
+    }
+}

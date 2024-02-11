@@ -1,37 +1,20 @@
-import React, { useEffect, useState } from 'react';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import { useTranslation } from 'react-i18next';
-import { Link } from 'react-scroll';
+import { useEffect, useState } from 'react';
+import { FaInstagram } from 'react-icons/fa';
 
-import logo from '../../images/logo.png';
-import LangSwitch from '../LangSwitch/LangSwitch';
-import { useOutsideClick } from '../../hooks/click-outside';
-import './Header.css';
-import './BurgerButton.css';
+import { useOutsideClick } from '../../hooks/outsideClick.js';
+import { LangSwitcher, Menu, BurgerButton } from '../index.js';
+import css from './Header.module.css';
 
 const Header = () => {
-    const { t } = useTranslation();
 
-    const [openMenu, setOpenMenu] = useState();
-    const [showMenu, setShowMenu] = useState(['menu_wrapper', 'hide_burger_menu']);
+    const [openMenu, setOpenMenu] = useState(false);
     const [scroll, setScroll] = useState(false);
-    console.log(openMenu);
-
-    const closeMenu = () => {
-        setShowMenu(['menu_wrapper', 'hide_burger_menu']);
-        setOpenMenu(false);
-    };
-
-    const handleBurger = () => {
-        if (!openMenu) {
-            setShowMenu(['menu_wrapper', 'show_burger_menu'])
-        } else {
-            setShowMenu(['menu_wrapper', 'hide_burger_menu'])
-        }
-        setOpenMenu(!openMenu);
+    const clickMenu = () => {
+        setOpenMenu(prevState => !prevState);
     }
-
-   // const menuRef = useOutsideClick(closeMenu);
+    const closeMenu = () => {
+        setOpenMenu(false);
+    }
 
     useEffect(() => {
         const handleScroll = () => {
@@ -43,67 +26,27 @@ const Header = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    const menuRef = useOutsideClick(closeMenu);
+
     return (
-        <nav className={scroll ? 'navbar_items navbar_scroll' : 'navbar_items'} id={'menu'}>
-            <h1>
-                <img className={'main_logo'} src={logo} alt="logo"/>
-            </h1>
-            <div style={{ display: 'flex', gap: '20px' }}>
-                <div className={'insta_icon'}>
-                    <a target="_blank" rel="noreferrer" href="https://www.instagram.com/lvlup_barbershop/"
-                       style={{ color: 'whitesmoke', textDecoration: 'none' }}>
-                        <InstagramIcon fontSize={'large'}/>
+        <div className={!scroll ? css.header_wrapper : css.header_wrapper + ' ' + css.scroll}>
+            <div className={css.logo}/>
+            <div className={css.lang_switcher_wrapper}>
+                <div>
+                    <a href={'https://www.instagram.com/cipthebarber/'} target={'_blank'} rel={'noreferrer'}>
+                        <FaInstagram size={'2em'}/>
                     </a>
                 </div>
-                <div><LangSwitch/></div>
+                <div><LangSwitcher scroll={scroll}/></div>
             </div>
-            <div className={'navigation'}>
-                <ul className={showMenu.join(' ')}>
-                    <li>
-                        <Link
-                            onClick={closeMenu}
-                            className={'nav_link'}
-                            to={'top'}
-                            smooth={true} spy={false}
-                            duration={800}
-                            offset={-80}>{t('main')}
-                        </Link>
-                        <Link
-                            onClick={closeMenu}
-                            className={'nav_link'}
-                            to={'services'}
-                            smooth={true} spy={false}
-                            duration={800}
-                            offset={-80}>{t('services')}
-                        </Link>
-                        <Link
-                            onClick={closeMenu}
-                            className={'nav_link'}
-                            to={'barbers'}
-                            smooth={true} spy={false}
-                            duration={800}
-                            offset={-80}>{t('barbers')}
-                        </Link>
-                        <Link
-                            onClick={closeMenu}
-                            className={'nav_link'}
-                            to={'contacts'}
-                            smooth={true} spy={false}
-                            duration={800}
-                            offset={-80}>{t('contacts')}
-                        </Link>
-                    </li>
-                </ul>
+            <div ref={menuRef}>
+                <Menu openMenu={openMenu} setOpenMenu={setOpenMenu}/>
             </div>
-            <div>
-                <div className={'menu_icon'} onClick={handleBurger}>
-                    <label className={'hamburger_menu'}>
-                        <div className={!openMenu ? 'topBar' : 'topBar open'}></div>
-                        <div className={!openMenu ? 'centerBar' : 'centerBar open'}></div>
-                        <div className={!openMenu ? 'bottomBar' : 'bottomBar open'}></div>
-                    </label></div>
+            <div ref={menuRef} className={css.burger_button} onClick={clickMenu}>
+                <BurgerButton openMenu={openMenu}/>
             </div>
-        </nav>
+        </div>
     );
 };
 

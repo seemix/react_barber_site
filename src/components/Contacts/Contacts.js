@@ -6,35 +6,38 @@ import EventAvailableOutlinedIcon from '@mui/icons-material/EventAvailableOutlin
 
 import './Contacts.css';
 import { useTranslation } from 'react-i18next';
-import { topAnimation, titleAnimation, bottomAnimation, blockAnimation } from '../../constants/animations';
+import { blockAnimation } from '../../constants/animations';
 import { motion } from 'framer-motion';
+import { SectionHeader } from '../index';
 
 const Contacts = () => {
     const { t } = useTranslation();
     return (
-        <div id={'contacts'} className={'services'}>
+        <section id={'contacts'}>
             <div className={'section_caption'}>
-                <motion.h3
-                    custom={2}
-                    initial={'hidden'}
-                    whileInView={'visible'}
-                    variants={topAnimation}
-                >LevelUP Barbershop
-                </motion.h3>
-                <motion.h2
-                    custom={3.5}
-                    initial={'hidden'}
-                    whileInView={'visible'}
-                    variants={titleAnimation}
-                >{t('ourContacts')}
-                </motion.h2>
-                <motion.div
-                    custom={2}
-                    initial={'hidden'}
-                    whileInView={'visible'}
-                    variants={bottomAnimation}
-                    className={'heading_line'}>
-                </motion.div>
+                {/*<motion.h3*/}
+                {/*    custom={2}*/}
+                {/*    initial={'hidden'}*/}
+                {/*    whileInView={'visible'}*/}
+                {/*    variants={topAnimation}*/}
+                {/*>LevelUP Barbershop*/}
+                {/*</motion.h3>*/}
+                {/*<motion.h2*/}
+                {/*    custom={3.5}*/}
+                {/*    initial={'hidden'}*/}
+                {/*    whileInView={'visible'}*/}
+                {/*    variants={titleAnimation}*/}
+                {/*>{t('ourContacts')}*/}
+                {/*</motion.h2>*/}
+                {/*<motion.div*/}
+                {/*    custom={2}*/}
+                {/*    initial={'hidden'}*/}
+                {/*    whileInView={'visible'}*/}
+                {/*    variants={bottomAnimation}*/}
+                {/*    className={'heading_line'}>*/}
+                {/*</motion.div>*/}
+                <SectionHeader caption={'ourContacts'}/>
+
                 <div className={'cards_wrapper'}>
                     <motion.div
                         custom={2}
@@ -87,7 +90,7 @@ const Contacts = () => {
                     </motion.div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

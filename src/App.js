@@ -1,8 +1,7 @@
 import React from 'react';
-import ScrollToTop from 'react-scroll-to-top';
 
 import './App.css';
-import { Barbers, Contacts, Footer, Header, Services, Slider } from './components';
+import { Barbers, Contacts, Footer, Header, Services, Slider, TopButton } from './components';
 
 const App = () => {
 
@@ -14,7 +13,7 @@ const App = () => {
             <Barbers/>
             <Contacts/>
             <Footer/>
-            <ScrollToTop className={'top_scroll'} component={'↑'} smooth />
+            <TopButton/>
         </div>
     );
 };

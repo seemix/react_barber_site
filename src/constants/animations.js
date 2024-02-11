@@ -6,7 +6,7 @@ export const topAnimation = {
     visible: custom => ({
         y: 0,
         opacity: 1,
-        transition: { delay: custom * 0.2, duration: 0.3, ease: 'easeInOut'  }
+        transition: { delay: custom * 0.2, duration: 0.3, ease: 'easeInOut' }
     })
 };
 
@@ -18,19 +18,7 @@ export const bottomAnimation = {
     visible: custom => ({
         y: 0,
         opacity: 1,
-        transition: { delay: custom * 0.3, duration: 0.3, ease: 'easeInOut'  }
-    })
-};
-
-export const headerAnimation = {
-    hidden: {
-        x: -40,
-        opacity: 0
-    },
-    visible: custom => ({
-        x: 0,
-        opacity: 1,
-        transition: { delay: custom * 0.3, duration: 0.4, ease: 'easeInOut'  }
+        transition: { delay: custom * 0.3, duration: 0.3, ease: 'easeInOut' }
     })
 };
 
@@ -42,7 +30,7 @@ export const buttonAnimation = {
     visible: custom => ({
         x: 0,
         opacity: 1,
-        transition: { delay: custom * 0.2, duration: 0.3, ease: 'easeInOut'  }
+        transition: { delay: custom * 0.2, duration: 0.3, ease: 'easeInOut' }
     })
 };
 export const titleAnimation = {
@@ -54,7 +42,7 @@ export const titleAnimation = {
     visible: custom => ({
         x: 0,
         opacity: 1,
-        transition: { delay: custom * 0.2, duration: 0.3, ease: 'easeInOut'  }
+        transition: { delay: custom * 0.2, duration: 0.3, ease: 'easeInOut' }
     })
 };
 export const blockAnimation = {
@@ -77,6 +65,6 @@ export const rightToLeftSlide = {
     visible: custom => ({
         opacity: 1,
         x: 0,
-        transition: { delay: custom * 0.2, duration: 0.6, ease: 'easeInOut'  }
+        transition: { delay: custom * 0.2, duration: 0.6, ease: 'easeInOut' }
     })
 };
