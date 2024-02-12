@@ -5,9 +5,9 @@ import { languages } from '../../../assets';
 import css from './LangSwitcher.module.css';
 
 const LangSwitcher = ({ scroll }) => {
-    const [language, setLanguage] = useState('RU');
+    const [language, setLanguage] = useState('');
     useEffect(() => {
-        setLanguage(i18n.language.toUpperCase());
+        setLanguage(i18n.language.slice(0, 2).toUpperCase());
     }, []);
     const changeLanguage = async (lang) => {
         await i18n.changeLanguage(lang);

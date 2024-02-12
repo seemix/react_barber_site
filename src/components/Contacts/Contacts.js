@@ -20,6 +20,7 @@ const Contacts = () => {
                     initial={'hidden'}
                     whileInView={'visible'}
                     variants={blockAnimation}
+                    viewport={{ once: true }}
                     className={'card ' + css.contact_form}>
                     <div className={css.icon_wrapper}>
                         <div><h3><GrLocation size={'1.2em'}/></h3></div>
@@ -51,6 +52,7 @@ const Contacts = () => {
                     initial={'hidden'}
                     whileInView={'visible'}
                     variants={blockAnimation}
+                    viewport={{ once: true }}
                     className={css.map}>
                     <iframe
                         title="GoogleMAP"

@@ -1,4 +1,4 @@
-export const lefXAnimation = {
+export const leftXAnimation = {
     hidden: {
         x: -20,
         opacity: 0,

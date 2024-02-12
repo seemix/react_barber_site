@@ -3,6 +3,7 @@
     min-height: 460px;
     width: 340px;
     margin-bottom: 20px;
+    max-width: 95vw;
 }
 
 .contact_form p {
@@ -27,7 +28,8 @@
     height: inherit;
     padding: 5px;
     width: 450px;
-
+    max-width: 95vw;
+    overflow: hidden;
 }
 
 .icon_wrapper {

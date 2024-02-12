@@ -2,7 +2,7 @@ import { RiScissorsLine } from 'react-icons/ri';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
-import { captionAnimation, lefXAnimation, rightXAnimation } from './animations.js';
+import { captionAnimation, leftXAnimation, rightXAnimation } from './animations.js';
 import css from './SectionHeader.module.css';
 import { assets } from '../../assets/common';
 
@@ -15,7 +15,8 @@ const SectionCaption = ({ caption }) => {
                     custom={3}
                     initial={'hidden'}
                     whileInView={'visible'}
-                    variants={lefXAnimation}
+                    variants={leftXAnimation}
+                    viewport={{once: true}}
                 >
                     <RiScissorsLine size={'1.3em'}/>
                 </motion.h4>
@@ -24,6 +25,7 @@ const SectionCaption = ({ caption }) => {
                     initial={'hidden'}
                     whileInView={'visible'}
                     variants={rightXAnimation}
+                    viewport={{once: true}}
                 >
                     {assets.barbershopName}
                 </motion.h4>
@@ -33,6 +35,7 @@ const SectionCaption = ({ caption }) => {
                 initial={'hidden'}
                 whileInView={'visible'}
                 variants={captionAnimation}
+                viewport={{once: true}}
             >
                 {t(`${caption}`)}
             </motion.h2>
