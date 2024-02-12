@@ -5,7 +5,6 @@ import { blockAnimation } from './animations';
 import css from './SingleBarber.module.css';
 
 const SingleBarber = ({ barber, index }) => {
-    console.log(barber);
     return (
         <motion.div className={'card ' + css.barber_card}
                     custom={index + 1.5}
