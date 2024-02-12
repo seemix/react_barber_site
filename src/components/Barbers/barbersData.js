@@ -28,5 +28,4 @@ export const barbers = [
         description: 'barber',
         picture: dav
     }
-
 ]

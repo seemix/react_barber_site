@@ -30,7 +30,7 @@ const Header = () => {
     const menuRef = useOutsideClick(closeMenu);
 
     return (
-        <div className={!scroll ? css.header_wrapper : css.header_wrapper + ' ' + css.scroll}>
+        <header className={!scroll ? css.header_wrapper : css.header_wrapper + ' ' + css.scroll}>
             <div className={css.logo}/>
             <div className={css.lang_switcher_wrapper}>
                 <div>
@@ -46,7 +46,7 @@ const Header = () => {
             <div ref={menuRef} className={css.burger_button} onClick={clickMenu}>
                 <BurgerButton openMenu={openMenu}/>
             </div>
-        </div>
+        </header>
     );
 };
 

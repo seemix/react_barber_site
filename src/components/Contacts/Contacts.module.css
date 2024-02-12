@@ -1,35 +1,33 @@
 .contact_form {
-    background-color: #fff;
     padding: 10px 40px;
-    -webkit-box-shadow: 0 50px 100px 0 rgba(64, 1, 4, 0.1), 0 -6px 0 0 rgba(248, 99, 107, 0.004);
-    box-shadow: 0 50px 100px 0 rgba(64, 1, 4, 0.1), 0 -6px 0 0 rgba(248, 99, 107, 0.004);
-    border-radius: 3px;
     min-height: 460px;
-    width: 400px;
+    width: 340px;
     margin-bottom: 20px;
+}
 
+.contact_form p {
+    margin-left: 10px;
 }
 
 .contact_form h3 {
     color: #1E1E1EFF;
     font-size: 19px;
     text-align: left;
-    margin-bottom: 15px;
+    margin-bottom: 0;
     margin-top: 25px;
 }
 
-.contact_form h4 {
-    margin-left: 10px;
-}
 
 .contact_form a {
     text-decoration: none;
-    color: #1E1E1EFF;
+    color: var(--dark_gray);
 }
+
 .map {
     height: inherit;
     padding: 5px;
-    width: 420px;
+    width: 450px;
+
 }
 
 .icon_wrapper {

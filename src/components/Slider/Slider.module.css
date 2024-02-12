@@ -16,7 +16,6 @@
     position: relative;
 }
 
-
 .overlay {
     width: 100%;
     height: calc(100vh);
@@ -26,6 +25,7 @@
     background: rgba(0, 0, 0, 0.3);
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .slider_welcome {
@@ -37,6 +37,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    z-index: 2;
 }
 
 @media screen and (max-width: 767px) {

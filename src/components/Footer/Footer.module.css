@@ -43,6 +43,10 @@
         text-align: center;
         margin-top: 20px;
     }
+    .footer_widget button {
+        width: 200px;
+        margin: 0 auto;
+    }
 
     .footer h5 {
         text-align: center;

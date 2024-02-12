@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
 import { headerAnimation } from './animations';
+import { assets } from '../../../assets/common';
 
 const WelcomeHeader = () => {
     const { t } = useTranslation();
@@ -14,7 +15,8 @@ const WelcomeHeader = () => {
                 initial={'hidden'}
                 whileInView={'visible'}
                 variants={headerAnimation}
-            >{t('welcome')} LevelUP Barbershop
+            >
+                {t('welcome')} {assets.barbershopName}
             </motion.h1>
 
         </>

@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Prata|Work+Sans:600&display=swap');
 
-
 :root {
     --black: #181818;
     --black_rgb: 24, 24, 24;
@@ -93,9 +92,17 @@ section {
 
 .card {
     background-color: #fff;
-    -webkit-box-shadow: 0 50px 100px 0 rgba(64, 1, 4, 0.1), 0 -6px 0 0 rgba(248, 99, 107, 0.004);
-    box-shadow: 0 50px 100px 0 rgba(64, 1, 4, 0.1), 0 -6px 0 0 rgba(248, 99, 107, 0.004);
+    -webkit-box-shadow: 0 20px 40px 0 rgba(64, 1, 4, 0.1), 0 -6px 0 0 rgba(248, 99, 107, 0.004);
+    box-shadow: 0 20px 40px 0 rgba(64, 1, 4, 0.1), 0 -6px 0 0 rgba(248, 99, 107, 0.004);
 }
+
+.cards_wrapper {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    flex-wrap: wrap;
+}
+.swiper-button-next, .swiper-button-prev { color: var(--orange); }
 
 
 @media screen and (max-width: 767px) {

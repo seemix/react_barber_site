@@ -1,0 +1,6 @@
+.barbers_container {
+    max-width: 1600px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    width: 100%;
+}

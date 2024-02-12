@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import css from './SingleBarber.module.css';
 import { blockAnimation } from './animations';
+import css from './SingleBarber.module.css';
 
 const SingleBarber = ({ barber, index }) => {
     console.log(barber);
