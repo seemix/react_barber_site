@@ -3,19 +3,18 @@ import { useTranslation } from 'react-i18next';
 import { SlClock } from 'react-icons/sl';
 import { motion } from 'framer-motion';
 
-import css from './SingleServiceCard.module.css';
 import { blockAnimation } from './animations';
+import { animation } from '../../../assets/common';
+import css from './SingleServiceCard.module.css';
 
 const SingleServiceCard = ({ id, icon, services }) => {
     const { t } = useTranslation();
 
     return (
         <motion.div className={'card ' + css.service_card}
+                    {...animation}
                     custom={id + 1.5}
-                    initial={'hidden'}
-                    whileInView={'visible'}
                     variants={blockAnimation}
-                    viewport={{ once: true }}
         >
             <div className={css.price_icon_wrap}>
                 {icon}

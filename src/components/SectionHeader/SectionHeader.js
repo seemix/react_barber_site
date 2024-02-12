@@ -3,8 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
 import { captionAnimation, leftXAnimation, rightXAnimation } from './animations.js';
+import { assets, animation } from '../../assets/common';
 import css from './SectionHeader.module.css';
-import { assets } from '../../assets/common';
 
 const SectionCaption = ({ caption }) => {
     const { t } = useTranslation();
@@ -12,30 +12,24 @@ const SectionCaption = ({ caption }) => {
         <>
             <div className={css.caption_top_line}>
                 <motion.h4
+                    {...animation}
                     custom={3}
-                    initial={'hidden'}
-                    whileInView={'visible'}
                     variants={leftXAnimation}
-                    viewport={{once: true}}
                 >
                     <RiScissorsLine size={'1.3em'}/>
                 </motion.h4>
                 <motion.h4
+                    {...animation}
                     custom={4}
-                    initial={'hidden'}
-                    whileInView={'visible'}
                     variants={rightXAnimation}
-                    viewport={{once: true}}
                 >
                     {assets.barbershopName}
                 </motion.h4>
             </div>
             <motion.h2
+                {...animation}
                 custom={3}
-                initial={'hidden'}
-                whileInView={'visible'}
                 variants={captionAnimation}
-                viewport={{once: true}}
             >
                 {t(`${caption}`)}
             </motion.h2>

@@ -2,16 +2,15 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 import { blockAnimation } from './animations';
+import { animation } from '../../../assets/common';
 import css from './SingleBarber.module.css';
 
 const SingleBarber = ({ barber, index }) => {
     return (
         <motion.div className={'card ' + css.barber_card}
+                    {...animation}
                     custom={index + 1.5}
-                    initial={'hidden'}
-                    whileInView={'visible'}
                     variants={blockAnimation}
-                    viewport={{ once: true }}
         >
             <div className={css.card_picture}
                  style={{ backgroundImage: `url(${barber.picture})` }}

@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 import { blockAnimation } from './animations';
 import { SectionHeader } from '../index';
 import css from './Contacts.module.css';
+import { animation } from '../../assets/common';
 
 const Contacts = () => {
     const { t } = useTranslation();
@@ -16,11 +17,9 @@ const Contacts = () => {
             <SectionHeader caption={'ourContacts'}/>
             <div className={'cards_wrapper'}>
                 <motion.div
+                    {...animation}
                     custom={2}
-                    initial={'hidden'}
-                    whileInView={'visible'}
                     variants={blockAnimation}
-                    viewport={{ once: true }}
                     className={'card ' + css.contact_form}>
                     <div className={css.icon_wrapper}>
                         <div><h3><GrLocation size={'1.2em'}/></h3></div>
@@ -48,11 +47,9 @@ const Contacts = () => {
                     <p> {t('sun')} </p>
                 </motion.div>
                 <motion.div
+                    {...animation}
                     custom={2.5}
-                    initial={'hidden'}
-                    whileInView={'visible'}
                     variants={blockAnimation}
-                    viewport={{ once: true }}
                     className={css.map}>
                     <iframe
                         title="GoogleMAP"
