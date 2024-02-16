@@ -5,8 +5,10 @@
     --black_rgb: 24, 24, 24;
     --light_gray: #f4f4f4;
     --dark_gray: #333333;
-    --orange: #ffbe0b;
+    /*--orange: #ffbe0b;*/
+    --orange: #f29900;
 }
+
 
 button {
     border-radius: 6px;
@@ -91,7 +93,7 @@ section {
 }
 
 .card {
-    background-color: #fff;
+    background-color: whitesmoke;
     -webkit-box-shadow: 0 20px 40px 0 rgba(64, 1, 4, 0.1), 0 -6px 0 0 rgba(248, 99, 107, 0.004);
     box-shadow: 0 20px 40px 0 rgba(64, 1, 4, 0.1), 0 -6px 0 0 rgba(248, 99, 107, 0.004);
 }

@@ -3,7 +3,6 @@ import { FaArrowUp } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 import { arrowUpAnimation } from './animations.js';
-import { animation } from '../../assets/common';
 import css from './TopButton.module.css';
 
 const TopButton = () => {
@@ -29,7 +28,6 @@ const TopButton = () => {
         <>
             {scrollPosition > 100 &&
                 <motion.button className={css.arrow_up}
-                               {...animation}
                                onClick={scrollToTop}
                                variants={arrowUpAnimation}
                                exit={'quit'}
