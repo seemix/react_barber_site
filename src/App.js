@@ -1,10 +1,9 @@
 import React from 'react';
 
-import './App.css';
 import { Barbers, Contacts, Footer, Header, Services, Slider, TopButton } from './components';
+import './App.css';
 
 const App = () => {
-
     return (
         <div id={'top'}>
             <Header/>
