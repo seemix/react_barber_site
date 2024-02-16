@@ -17,3 +17,14 @@ query NewQuery {
     }
   }
 }`;
+
+export const barbersMapper = (data) => {
+    return data.barbers.nodes.map(barber => {
+        return {
+            id: barber.barberId,
+            name: barber.barbers.name,
+            description: barber.barbers.description,
+            picture: barber.featuredImage.node.mediaItemUrl
+        }
+    })
+}

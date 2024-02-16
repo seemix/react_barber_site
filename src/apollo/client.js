@@ -1,10 +1,7 @@
 import { ApolloClient, createHttpLink, InMemoryCache } from '@apollo/client';
 
 const link = createHttpLink({
-
-    uri: 'https://levelupbalti.com/wp/index.php?graphql/',
-    // credentials: 'same-origin'
-
+    uri: '/wp/index.php?graphql',
 });
 const client = new ApolloClient({
     link,
