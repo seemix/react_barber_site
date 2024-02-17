@@ -6,18 +6,20 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import { barbers } from './barbersData';
-import { SectionHeader, SingleBarber } from '../index';
+import { Loader, SectionHeader, SingleBarber } from '../index';
 import { swiperSettings } from './swiperSettings';
 import css from './Barbers.module.css';
 import { ALL_BARBERS, barbersMapper } from './query';
 
 const Barbers = () => {
-    const { loading, data, error } = useQuery(ALL_BARBERS);
+    const { loading, data, } = useQuery(ALL_BARBERS);
     let mapedData;
     if (data) mapedData = barbersMapper(data);
+    console.log(mapedData);
     return (
         <section id={'barbers'}>
             <SectionHeader caption={'ourBarbers'}/>
+            {loading && <Loader/>}
             <div className={css.barbers_container}>
                 <Swiper {...swiperSettings}>
                     {

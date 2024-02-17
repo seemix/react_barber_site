@@ -1,19 +1,14 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 
-import { Barbers, Contacts, Footer, Header, Services, Slider, TopButton } from './components';
+import { Loader } from './components';
 import './App.css';
 
+const Layout = React.lazy(() => import('./components/Layout/Layout'));
 const App = () => {
     return (
-        <div id={'top'}>
-            <Header/>
-            <Slider/>
-            <Services/>
-            <Barbers/>
-            <Contacts/>
-            <Footer/>
-            <TopButton/>
-        </div>
+        <Suspense fallback={<Loader/>}>
+            <Layout/>
+        </Suspense>
     );
 };
 
