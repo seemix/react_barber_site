@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import { Loader, SectionHeader, SingleBarber } from '../index';
+import { SectionHeader, SingleBarber } from '../index';
 import { swiperSettings } from './swiperSettings';
 import { ALL_BARBERS, barbersMapper } from './query';
 import css from './Barbers.module.css';
@@ -18,7 +18,6 @@ const Barbers = () => {
     return (
         <section id={'barbers'}>
             <SectionHeader caption={'ourBarbers'}/>
-            {loading && <Loader/>}
             <div className={css.barbers_container}>
                 <Swiper {...swiperSettings}>
                     {barbers && barbers.map((barber, index) =>

@@ -6,9 +6,7 @@ import './App.css';
 const Layout = React.lazy(() => import('./components/Layout/Layout'));
 const App = () => {
     return (
-        <Suspense fallback={<Loader/>}>
-            <Layout/>
-        </Suspense>
+        <Suspense fallback={<Loader/>}> <Layout/> </Suspense>
     );
 };
 
