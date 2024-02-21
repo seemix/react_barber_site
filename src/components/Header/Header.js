@@ -34,7 +34,7 @@ const Header = () => {
             <div className={css.logo}/>
             <div className={css.lang_switcher_wrapper}>
                 <div>
-                    <a href={'https://www.instagram.com/cipthebarber/'} target={'_blank'} rel={'noreferrer'}>
+                    <a href={'https://www.instagram.com/lvlup_barbershop/'} target={'_blank'} rel={'noreferrer'} aria-label={'instagram'}>
                         <FaInstagram size={'2em'}/>
                     </a>
                 </div>

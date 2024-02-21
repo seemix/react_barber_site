@@ -2,8 +2,8 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
-import { headerAnimation } from './animations';
 import { animation, assets } from '../../../assets/common';
+import { headerAnimation } from './animations';
 
 const WelcomeHeader = () => {
     const { t } = useTranslation();
@@ -11,12 +11,11 @@ const WelcomeHeader = () => {
         <>
             <motion.h1
                 {...animation}
-                custom={3}
+                custom={.5}
                 variants={headerAnimation}
             >
                 {t('welcome')} {assets.barbershopName}
             </motion.h1>
-
         </>
     );
 };

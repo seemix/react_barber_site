@@ -27,4 +27,4 @@ export const barbersMapper = (data) => {
             picture: barber.featuredImage.node.mediaItemUrl
         }
     })
-}
+};
