@@ -11,7 +11,7 @@ import { ALL_BARBERS, barbersMapper } from './query';
 import css from './Barbers.module.css';
 
 const Barbers = () => {
-    const { loading, data } = useQuery(ALL_BARBERS);
+    const { data } = useQuery(ALL_BARBERS);
     let barbers;
     if (data) barbers = barbersMapper(data);
 
