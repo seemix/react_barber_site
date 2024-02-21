@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Prata|Work+Sans:600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 
 :root {
     --black: #181818;
@@ -6,16 +6,18 @@
     --light_gray: #f4f4f4;
     --dark_gray: #333333;
     --orange: #ffbe0b;
-    /*--orange: #f29900;*/
 }
 
+@font-face {
+    font-family: "Prata", sans-serif;
+    src: url("./assets/Prata-Regular.ttf");
+}
 
 button {
     border-radius: 6px;
     border-width: 0;
     box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .1) 0 2px 5px 0, rgba(0, 0, 0, .07) 0 1px 1px 0;
     box-sizing: border-box;
-    /*color: whitesmoke;*/
     color: var(--black);
     cursor: pointer;
     font-size: 100%;
