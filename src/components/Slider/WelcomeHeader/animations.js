@@ -9,6 +9,6 @@ export const headerAnimation = {
         x: 0,
         opacity: 1,
         filter: 'blur(0)',
-        transition: { delay: custom * .1, duration: .35, ease: 'easeInOut'  }
+        transition: { delay: custom * .1, duration: .3, ease: 'easeInOut'  }
     })
 };

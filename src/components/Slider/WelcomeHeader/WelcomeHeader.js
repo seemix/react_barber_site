@@ -11,7 +11,7 @@ const WelcomeHeader = () => {
         <>
             <motion.h1
                 {...animation}
-                custom={.5}
+                custom={0}
                 variants={headerAnimation}
             >
                 {t('welcome')} {assets.barbershopName}

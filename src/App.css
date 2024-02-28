@@ -8,11 +8,6 @@
     --orange: #ffbe0b;
 }
 
-@font-face {
-    font-family: "Prata", sans-serif;
-    src: url("./assets/Prata-Regular.ttf");
-}
-
 button {
     border-radius: 6px;
     border-width: 0;
@@ -30,7 +25,6 @@ button {
     position: relative;
     text-align: center;
     letter-spacing: 1px;
-
 }
 
 h1, h2, h3, h4, h5 {
