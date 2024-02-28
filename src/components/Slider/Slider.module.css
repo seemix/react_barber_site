@@ -46,9 +46,4 @@
     .slider_welcome {
         top: 45%;
     }
-    .slider_container {
-        background-image: url("./fallback_slider.webp");
-        background-size: cover;
-        background-position: center;
-    }
 }
