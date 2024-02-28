@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useQuery } from '@apollo/client';
 // Import Swiper styles
@@ -11,6 +12,8 @@ import { swiperSettings } from './swiperSettings';
 import { BookingButton, WelcomeHeader } from '../index';
 import { ALL_SLIDES, slideMapper } from './query';
 import css from './Slider.module.css';
+import { animation } from '../../assets/common';
+import { slideAppearAnimation } from './animations';
 
 const Slider = () => {
     const { data } = useQuery(ALL_SLIDES);
@@ -20,15 +23,18 @@ const Slider = () => {
 
     return (
         <main className={css.slider_container}>
-            <Swiper {...swiperSettings}  >
-                {
-                    slides && slides.map((slide, index) => (<SwiperSlide key={slide.id}>
-                        <img src={slide.slide} alt={`slide${index}`} className={css.pic}
-                             srcSet={slide.slide}
-                        />
-                    </SwiperSlide>))
-                }
-            </Swiper>
+            {slides && <motion.div
+                {...animation}
+                variants={slideAppearAnimation}
+            >
+                <Swiper {...swiperSettings}  >
+                    { slides.map((slide, index) => (<SwiperSlide key={slide.id}>
+                            <img src={slide.slide} alt={`slide${index}`} className={css.pic}
+                                 srcSet={slide.slide}
+                            />
+                        </SwiperSlide>))}
+                </Swiper>
+            </motion.div> }
             <div className={css.overlay}/>
             <div className={css.slider_welcome}>
                 <WelcomeHeader/>
