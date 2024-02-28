@@ -3,6 +3,7 @@ import { FaInstagram } from 'react-icons/fa';
 
 import { useOutsideClick } from '../../hooks/outsideClick.js';
 import { LangSwitcher, Menu, BurgerButton } from '../index.js';
+import { assets } from '../../assets/common';
 import css from './Header.module.css';
 
 const Header = () => {
@@ -34,7 +35,7 @@ const Header = () => {
             <div className={css.logo}/>
             <div className={css.lang_switcher_wrapper}>
                 <div>
-                    <a href={'https://www.instagram.com/lvlup_barbershop/'} target={'_blank'} rel={'noreferrer'} aria-label={'instagram'}>
+                    <a href={assets.instagramUrl} target={'_blank'} rel={'noreferrer'} aria-label={'instagram'}>
                         <FaInstagram size={'2em'}/>
                     </a>
                 </div>
