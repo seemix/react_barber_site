@@ -1,8 +1,9 @@
 export const bookingButtonAnimation = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 0, scale: 1.1 },
     visible: {
         opacity: 1,
-        transition: { duration: 1 }
+        scale: 1,
+        transition: { duration: 1, delay: .5 }
     },
     quit: {
         opacity: 0,
