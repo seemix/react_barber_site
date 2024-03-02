@@ -48,7 +48,7 @@ const Contacts = () => {
                 </motion.div>
                 <motion.div
                     {...animation}
-                    custom={2.5}
+                    custom={3}
                     variants={blockAnimation}
                     className={css.map}>
                     <iframe

@@ -4,6 +4,6 @@ export const slideAppearAnimation = {
     },
     visible: {
         opacity: 1,
-        transition: { duration: .7, ease: 'easeIn' }
+        transition: { duration: .6, ease: 'easeIn' }
     }
 };

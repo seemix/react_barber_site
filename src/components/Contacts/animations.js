@@ -6,6 +6,6 @@ export const blockAnimation = {
     visible: custom => ({
         opacity: 1,
         y: 0,
-        transition: { delay: custom * .3, duration: .3, ease: 'easeInOut' }
+        transition: { delay: custom * .3, duration: .6, ease: 'easeInOut' }
     })
 };

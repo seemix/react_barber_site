@@ -11,6 +11,6 @@ export const headerAnimation = {
         scale: 1,
         opacity: 1,
         filter: 'blur(0)',
-        transition: { delay: custom * .1, duration: .3, ease: 'easeInOut'  }
+        transition: { delay: custom * .1, duration: .5, ease: 'easeInOut'  }
     })
 };

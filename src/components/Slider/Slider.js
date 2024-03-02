@@ -31,6 +31,7 @@ const Slider = () => {
                     { slides.map((slide, index) => (<SwiperSlide key={slide.id}>
                             <img src={slide.slide} alt={`slide${index}`} className={css.pic}
                                  srcSet={slide.slide}
+                                 fetchpriority={'high'}
                             />
                         </SwiperSlide>))}
                 </Swiper>
