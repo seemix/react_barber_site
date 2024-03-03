@@ -1,0 +1,4 @@
+.welcome h1 {
+    color: whitesmoke;
+    font-size: calc(36px + (42 - 36) * ((100vw - 360px) / (1920 - 360)));;
+}
