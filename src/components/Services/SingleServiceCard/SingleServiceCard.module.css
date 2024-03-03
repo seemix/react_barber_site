@@ -14,7 +14,11 @@
     padding: 20px;
     margin: 10px;
 }
-
+.service_card h3 {
+    text-align: left;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
 .price_icon_wrap  {
     font-size: 50px;
     margin-bottom: 30px;
@@ -28,7 +32,7 @@
 }
 
 .time {
-    margin-left: 15px;
+    margin-left: 25px;
     display: block;
     color: var(--dark_gray);
 }

@@ -28,14 +28,15 @@ const Slider = () => {
                 variants={slideAppearAnimation}
             >
                 <Swiper {...swiperSettings}  >
-                    { slides.map((slide, index) => (<SwiperSlide key={slide.id}>
-                            <img src={slide.slide} alt={`slide${index}`} className={css.pic}
-                                 srcSet={slide.slide}
-                                 fetchpriority={'high'}
-                            />
-                        </SwiperSlide>))}
+                    {slides.map((slide, index) => (<SwiperSlide key={slide.id}>
+                        <img src={slide.slide} alt={`slide${index}`} className={css.pic}
+                             srcSet={slide.slide}
+                             fetchpriority={'high'}
+                             decoding={'async'}
+                        />
+                    </SwiperSlide>))}
                 </Swiper>
-            </motion.div> }
+            </motion.div>}
             <div className={css.overlay}/>
             <div className={css.slider_welcome}>
                 <WelcomeHeader/>

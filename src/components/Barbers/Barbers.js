@@ -18,8 +18,8 @@ const Barbers = () => {
     return (
         <section id={'barbers'}>
             <SectionHeader caption={'ourBarbers'}/>
-            <div className={css.barbers_container}>
-                <Swiper {...swiperSettings}>
+            <div className={css.barbers_container} >
+                <Swiper {...swiperSettings} className={css.slider_container}>
                     {barbers && barbers.map((barber, index) =>
                         <SwiperSlide key={barber.id}>
                             <SingleBarber barber={barber} index={index}/>

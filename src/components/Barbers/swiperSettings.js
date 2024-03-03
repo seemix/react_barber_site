@@ -32,11 +32,11 @@ export const swiperSettings = {
         },
         '@1.50': {
             slidesPerView: 4,
-            spaceBetween: 10,
+            spaceBetween: 15,
         },
         '@1.80': {
             slidesPerView: 4,
-            spaceBetween: 10
+           spaceBetween: 80
         }
     },
     loop: true,

@@ -23,7 +23,7 @@ const SectionCaption = ({ caption }) => {
                     custom={4}
                     variants={rightXAnimation}
                 >
-                    {assets.barbershopName}
+                    {assets.barbershopName} {t('barbershop')}
                 </motion.h4>
             </div>
             <motion.h2
