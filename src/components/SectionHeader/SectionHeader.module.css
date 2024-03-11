@@ -7,10 +7,6 @@
 
 .caption_top_line h4 {
     color: var(--orange);
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
-h2 {
-    margin-top: 10px;
-    margin-bottom: 50px;
-}

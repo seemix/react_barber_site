@@ -17,12 +17,13 @@
 
 .navigation li {
     list-style: none;
+    text-align: center;
 }
 
 .nav_link {
     text-decoration: none;
     cursor: pointer;
-    padding: 5px calc(10px + (20 - 10) * ((100vw - 800px) / (1920 - 800)));
+    padding: 33px calc(10px + (20 - 10) * ((100vw - 800px) / (1920 - 800)));
     text-align: center;
     color: var(--light_gray);
 }
@@ -59,12 +60,15 @@
         max-height: 400%;
     }
 
-    .nav_link {
-        padding: 5px 0;
+    .navigation li {
+        list-style: none;
+        text-align: center;
+        box-sizing: border-box;
     }
 
-    .nav_link:hover {
-        box-shadow: 0 0 0 var(--light_gray) inset,
-        800px 0 0 rgba(255, 255, 255, 0.03) inset;
+    .nav_link {
+        padding: 5px;
+        width: 100%;
+        display: inline-block;
     }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { MdPhoneIphone } from 'react-icons/md';
 
-import logo from '../Header/logo.png';
+import logo from '../Header/logo.webp';
 import { BookingButton } from '../index';
 import css from './Footer.module.css';
 
@@ -11,13 +11,13 @@ const Footer = () => {
     return (
         <footer className={css.footer}>
             <div className={css.footer_widget}>
-                <img className={'main_logo'} src={logo} alt="logo" width={220}/>
+                <img src={logo} alt="logo" width={220} height={64} loading={'lazy'}/>
             </div>
             <div className={css.footer_widget}>
                 <h5>{t('address')}</h5>
                 <p>{t('streetNumber')}</p>
                 <p><MdPhoneIphone size={'1.1em'}/>+37360233555</p>
-            </div>
+            </div>++++
             <div className={css.footer_widget}>
                 <h5>{t('workHours')}</h5>
                 <p>{t('monSat')} </p>

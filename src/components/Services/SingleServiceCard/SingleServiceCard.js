@@ -22,7 +22,7 @@ const SingleServiceCard = ({ id, icon, services }) => {
             {
                 services.map((service, index) =>
                     <div className={css.price_item} key={index}>
-                        <h4>{t(service.name)}</h4>
+                        <h3>{t(service.name)}</h3>
                         <span className={css.time}>
                             <SlClock/> {service.duration} {t('minutes')}
                         </span>

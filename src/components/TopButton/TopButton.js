@@ -34,7 +34,7 @@ const TopButton = () => {
                                whileHover={'hover'}
                                whileTap={'tap'}
                 >
-                    <FaArrowUp/>
+                    <FaArrowUp size={'0.9em'}/>
                 </motion.button>
             }
 

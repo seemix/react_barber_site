@@ -1,7 +1,8 @@
 {
   "lang": "EN",
   "book": "BOOK ON!",
-  "welcome": "Welcome to ",
+  "welcome": "Welcome to barbershop",
+  "barbershop": "Barbershop",
   "main": "main",
   "services": "services",
   "barbers": "barbers",

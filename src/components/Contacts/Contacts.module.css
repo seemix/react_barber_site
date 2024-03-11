@@ -3,7 +3,8 @@
     min-height: 460px;
     width: 340px;
     margin-bottom: 20px;
-    max-width: 95vw;
+    max-width: 90vw;
+    box-sizing: border-box;
 }
 
 .contact_form p {

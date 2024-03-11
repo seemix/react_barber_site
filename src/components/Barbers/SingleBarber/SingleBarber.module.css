@@ -3,11 +3,11 @@
     flex-direction: column;
     width: 320px;
     border-radius: 6px;
-    height: 400px;
+    height: 430px;
 }
 .card_picture {
     width: 320px;
-    height: 330px;
+    height: 350px;
     background-size: cover;
     background-position: center;
     border-radius: 6px 6px 0 0;

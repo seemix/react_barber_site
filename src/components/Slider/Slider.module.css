@@ -2,15 +2,16 @@
     position: relative;
     display: block;
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     top: 0;
+    background-color: var(--black);
     z-index: 0;
 }
 
 .pic {
     width: 100%;
-    height: 100vh;
-    background-size: cover;
+    height: 100dvh;
+    object-fit: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
@@ -18,11 +19,11 @@
 
 .overlay {
     width: 100%;
-    height: calc(100vh);
+    height: 100dvh;
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
     z-index: 1;

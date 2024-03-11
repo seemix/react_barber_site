@@ -1,4 +1,3 @@
-
 .price {
     font-family: "Prata", sans-serif;
     font-size: 18px;
@@ -8,9 +7,6 @@
     top: 0;
     right: 0;
 }
-
-
-
 
 @media screen and (max-width: 767px) {
     .services {
