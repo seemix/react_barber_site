@@ -7,8 +7,8 @@ export const swiperSettings = {
     style: { zIndex: 0 },
     breakpoints: {
         '@0.00': {
-            slidesPerView: 1.2,
-            spaceBetween: 5,
+            slidesPerView: 1,
+            spaceBetween: 10,
         },
         '@0.50': {
             slidesPerView: 1.2,
