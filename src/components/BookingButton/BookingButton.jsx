@@ -1,11 +1,10 @@
 import React from 'react';
-
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
-import css from './BookingButton.module.css';
 import { bookingButtonAnimation } from './animations.js';
 import { animation } from '../../assets/common';
+import css from './BookingButton.module.css';
 
 const BookingButton = () => {
     const { t } = useTranslation();

@@ -7,8 +7,8 @@ import { useTranslation } from 'react-i18next';
 
 import { blockAnimation } from './animations';
 import { SectionHeader } from '../index';
-import css from './Contacts.module.css';
 import { animation } from '../../assets/common';
+import css from './Contacts.module.css';
 
 const Contacts = () => {
     const { t } = useTranslation();

@@ -1,13 +1,12 @@
 .barber_card {
     display: flex;
     flex-direction: column;
-    width: 320px;
+    width: calc(260px + (320 - 260) * ((100vw - 360px) / (1920 - 360)));
     border-radius: 6px;
-    height: 430px;
 }
 .card_picture {
-    width: 320px;
-    height: 350px;
+    width: calc(260px + (320 - 260) * ((100vw - 360px) / (1920 - 360)));
+    height: auto;
     background-size: cover;
     background-position: center;
     border-radius: 6px 6px 0 0;
