@@ -1,6 +1,6 @@
 
 export const assets = {
-    barbershopName: 'LevelUP',
+    barbershopName: 'Level Up',
     instagramUrl: 'https://www.instagram.com/lvlup_barbershop/'
 }
 export const animation = {

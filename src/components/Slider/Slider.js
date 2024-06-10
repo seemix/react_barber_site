@@ -29,8 +29,8 @@ const Slider = () => {
             >
                 <Swiper {...swiperSettings}  >
                     {slides.map((slide, index) => (<SwiperSlide key={slide.id}>
-                        <img src={slide.slide} alt={`slide${index}`} className={css.pic}
-                             srcSet={slide.slide}
+                        <img  alt={`slide${index}`} className={css.pic}
+                            srcSet={slide.slide}
                             // fetchpriority={'high'}
                              decoding={'async'}
                         />

@@ -17,14 +17,16 @@
 
 .barber_text h4 {
     text-align: center;
-    font-size: 14px;
-    line-height: 13px;
+    font-size: 15px;
+    line-height: 16px;
     margin-top: 0;
     margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
 }
 .barber_text h3 {
     line-height: 20px;
     margin-bottom: 10px;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 22px;
+    letter-spacing: .01em;
 }
