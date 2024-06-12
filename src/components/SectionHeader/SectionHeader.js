@@ -28,7 +28,7 @@ const SectionCaption = ({ caption }) => {
             </div>
             <motion.h2
                 {...animation}
-                custom={3}
+                custom={5}
                 variants={captionAnimation}
             >
                 {t(`${caption}`)}

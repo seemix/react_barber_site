@@ -32,6 +32,6 @@ export const captionAnimation = {
         y: 0,
         opacity: 1,
         scale: 1,
-        transition: { delay: custom * .2, duration: .55, ease: 'easeInOut' }
+        transition: { delay: custom * .8, duration: .55, ease: 'easeInOut' }
     })
 }
