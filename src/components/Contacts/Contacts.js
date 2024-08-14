@@ -30,7 +30,7 @@ const Contacts = () => {
                         <div><h3><MdPhoneIphone size={'1.2em'}/></h3></div>
                         <div><h3>{t('phone')}</h3></div>
                     </div>
-                    <p> +(373) 60 233 555 </p>
+                    <p><a href={'tel:+37360233555'}> +(373) 60 233 555 </a></p>
                     <div className={css.icon_wrapper}>
                         <div><h3><BsInstagram/></h3></div>
                         <div><h3>Instagram</h3></div>

@@ -16,7 +16,7 @@ const Footer = () => {
             <div className={css.footer_widget}>
                 <h5>{t('address')}</h5>
                 <p>{t('streetNumber')}</p>
-                <p><MdPhoneIphone size={'1.1em'}/>+37360233555</p>
+                <p><MdPhoneIphone size={'1.1em'}/><a href={'tel:+37360233555'}> +37360233555</a></p>
             </div>++++
             <div className={css.footer_widget}>
                 <h5>{t('workHours')}</h5>

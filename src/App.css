@@ -71,6 +71,7 @@ h4 {
 
 a {
     color: var(--light_gray);
+    text-decoration: none;
 }
 
 section {
