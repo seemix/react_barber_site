@@ -3,6 +3,7 @@
     flex-direction: column;
     width: calc(260px + (320 - 260) * ((100vw - 360px) / (1920 - 360)));
     border-radius: 6px;
+    overflow: hidden;
 }
 .card_picture {
     width: calc(260px + (320 - 260) * ((100vw - 360px) / (1920 - 360)));
@@ -10,9 +11,11 @@
     background-size: cover;
     background-position: center;
     border-radius: 6px 6px 0 0;
+    transition: scale .4s ease-in-out;
 }
 .card_picture:hover {
     filter: grayscale(.9);
+    scale: 1.05;
 }
 
 .barber_text h4 {
