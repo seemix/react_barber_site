@@ -8,6 +8,12 @@
     gap: 25px;
 }
 
+.card_picture_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .barber_card h2 {
     font-size: 25px;
 }
