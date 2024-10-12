@@ -1,33 +1,26 @@
 .barber_card {
     display: flex;
     flex-direction: row;
-    /*width: calc(260px + (320 - 260) * ((100vw - 360px) / (1920 - 360)));*/
     border-radius: 6px;
     overflow: hidden;
     line-height: 1.5em;
-    /*height: 400px;*/
     padding: 20px;
     gap: 25px;
 }
+
 .barber_card h2 {
     font-size: 25px;
-    /*text-align: left;*/
 }
+
 .card_picture {
-    /*width: calc(280px + (260 - 280) * ((100vw - 360px) / (1920 - 360)));*/
     width: 300px;
     margin: 0 auto;
-    /*aspect-ratio: 1;*/
-    /*width: 353px;*/
-    /*height: 380px;*/
-    /*height: 100%;*/
-    /*height: auto;*/
     background-size: cover;
     background-position: center;
-    /*border-radius: 6px 6px 0 0;*/
     border-radius: 6px;
     transition: scale .4s ease-in-out;
 }
+
 .card_picture:hover {
     filter: grayscale(.9);
 }
@@ -40,6 +33,7 @@
     margin-bottom: 20px;
     font-family: 'Inter', sans-serif;
 }
+
 .barber_text h3 {
     line-height: 20px;
     margin-bottom: 10px;
@@ -53,6 +47,7 @@
         flex-direction: column;
         height: auto;
     }
+
     .barber_card h2 {
         text-align: center;
     }
