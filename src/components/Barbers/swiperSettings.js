@@ -1,3 +1,50 @@
+// import { Navigation, Pagination } from 'swiper/modules';
+//
+// export const swiperSettings = {
+//     autoHeight: true,
+//     slidesPerView: 1,
+//     spaceBetween: 10,
+//     style: { zIndex: 0 },
+//     breakpoints: {
+//         '@0.00': {
+//             slidesPerView: 1.1,
+//             spaceBetween: 5,
+//         },
+//         '@0.50': {
+//             slidesPerView: 1.2,
+//             spaceBetween: 5,
+//         },
+//         '@0.60': {
+//             slidesPerView: 1.3,
+//             spaceBetween: 5,
+//         },
+//         '@0.75': {
+//             slidesPerView: 1.8,
+//             spaceBetween: 10,
+//         },
+//         '@1.00': {
+//             slidesPerView: 2.5,
+//             spaceBetween: 10,
+//         },
+//         '@1.25': {
+//             slidesPerView: 2.9,
+//             spaceBetween: 10,
+//         },
+//         '@1.50': {
+//             slidesPerView: 4,
+//             spaceBetween: 15,
+//         },
+//         '@1.80': {
+//             slidesPerView: 4,
+//            spaceBetween: 80
+//         }
+//     },
+//     loop: true,
+//     navigation: true,
+//     modules: [Pagination, Navigation],
+//     className: 'swiper_wrap'
+// }
+
 import { Navigation, Pagination } from 'swiper/modules';
 
 export const swiperSettings = {
@@ -11,36 +58,37 @@ export const swiperSettings = {
             spaceBetween: 5,
         },
         '@0.50': {
-            slidesPerView: 1.2,
+            slidesPerView: 1,
             spaceBetween: 5,
         },
         '@0.60': {
-            slidesPerView: 1.3,
+            slidesPerView: 1,
             spaceBetween: 5,
         },
         '@0.75': {
-            slidesPerView: 1.8,
+            slidesPerView: 1,
             spaceBetween: 10,
         },
         '@1.00': {
-            slidesPerView: 2.5,
+            slidesPerView: 1,
             spaceBetween: 10,
         },
         '@1.25': {
-            slidesPerView: 2.9,
+            slidesPerView: 1,
             spaceBetween: 10,
         },
         '@1.50': {
-            slidesPerView: 4,
+            slidesPerView: 1,
             spaceBetween: 15,
         },
         '@1.80': {
-            slidesPerView: 4,
-           spaceBetween: 80
+            slidesPerView: 1,
+            spaceBetween: 15
         }
     },
     loop: true,
     navigation: true,
+    pagination: true,
     modules: [Pagination, Navigation],
     className: 'swiper_wrap'
 }

@@ -1,5 +1,5 @@
 .barbers_container {
-    max-width: 1600px;
+    max-width: 1200px;
     overflow-x: hidden;
     box-sizing: border-box;
     width: 100%;
@@ -7,5 +7,5 @@
 }
 .slider_container {
     padding: 20px 30px;
-    min-height: 500px;
+    min-height: 450px;
 }
