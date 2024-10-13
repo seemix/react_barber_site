@@ -2,9 +2,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    position: absolute;
+    position: fixed;
 }
-
 
 .loader {
     background-image: url("../../images/loader.webp");
@@ -67,10 +66,9 @@
     }
 }
 
-
 .loader_spin {
     animation: spin 1s linear infinite;
-    border: solid 4px whitesmoke;
+    border: solid 4px var(--orange);
     background: rgba(255, 255, 255, 0);
     border-top: solid 5px transparent;
     border-radius: 100%;

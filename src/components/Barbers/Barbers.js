@@ -17,14 +17,14 @@ import css from './Barbers.module.css';
 const Barbers = () => {
 
     const { i18n } = useTranslation();
-    const { data, loading} = useQuery(ALL_BARBERS(i18n.language));
+    const { data, loading } = useQuery(ALL_BARBERS(i18n.language));
     let barbers;
     if (data) barbers = barbersMapper(data);
-
     return (
         <section id={'barbers'}>
             <SectionHeader caption={'ourBarbers'}/>
-            {loading && <Loader/>}
+            {loading && <><Loader/></>}
+            {/*{loading && <h1>LOADING...</h1>}*/}
             <motion.div className={css.barbers_container}
                         {...animation}
                         custom={1}

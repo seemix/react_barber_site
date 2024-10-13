@@ -3,7 +3,7 @@ export const blockAnimation = {
         opacity: 0,
         y: -30,
         filter: 'blur(2px)',
-        scale: .9
+        scale: .95
     },
     visible: custom => ({
         opacity: 1,
