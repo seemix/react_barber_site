@@ -23,8 +23,7 @@ const Barbers = () => {
     return (
         <section id={'barbers'}>
             <SectionHeader caption={'ourBarbers'}/>
-            {loading && <><Loader/></>}
-            {/*{loading && <h1>LOADING...</h1>}*/}
+            {loading && <Loader dark={true}/>}
             <motion.div className={css.barbers_container}
                         {...animation}
                         custom={1}

@@ -15,11 +15,14 @@
     border-radius: 100%;
     -webkit-animation: fade-in 1.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite both;
     animation: fade-in 1.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite both;
-
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
+}
+
+.loader_dark {
+    background-image: url("../../images/loader_dark.webp");
 }
 
 
@@ -41,6 +44,7 @@
 
     }
 }
+
 @keyframes fade-in {
     0% {
         opacity: .2;
@@ -61,14 +65,13 @@
     }
     100% {
         opacity: .2;
-        /*scale: .67;*/
         filter: blur(0);
     }
 }
 
 .loader_spin {
     animation: spin 1s linear infinite;
-    border: solid 4px var(--orange);
+    border: solid 4px whitesmoke;
     background: rgba(255, 255, 255, 0);
     border-top: solid 5px transparent;
     border-radius: 100%;
@@ -76,6 +79,11 @@
     height: 80px;
     display: inline-block;
     z-index: 21;
+}
+
+.loader_spin_dark {
+    border: solid 4px var(--orange);
+    border-top: solid 5px transparent;
 }
 
 @keyframes spin {

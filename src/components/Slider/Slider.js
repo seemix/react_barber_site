@@ -16,7 +16,7 @@ import { animation } from '../../assets/common';
 import { slideAppearAnimation } from './animations';
 
 const Slider = () => {
-    const { data } = useQuery(ALL_SLIDES);
+    const { data, loading } = useQuery(ALL_SLIDES);
 
     let slides;
     if (data) slides = slideMapper(data);
@@ -29,8 +29,8 @@ const Slider = () => {
             >
                 <Swiper {...swiperSettings}  >
                     {slides.map((slide, index) => (<SwiperSlide key={slide.id}>
-                        <img  alt={`slide${index}`} className={css.pic}
-                            srcSet={slide.slide}
+                        <img alt={`slide${index}`} className={css.pic}
+                             srcSet={slide.slide}
                             // fetchpriority={'high'}
                              decoding={'async'}
                         />
@@ -39,8 +39,7 @@ const Slider = () => {
             </motion.div>}
             <div className={css.overlay}/>
             <div className={css.slider_welcome}>
-                <WelcomeHeader/>
-                <BookingButton/>
+                {!loading && <><WelcomeHeader/><BookingButton/></>}
             </div>
         </main>
     );
