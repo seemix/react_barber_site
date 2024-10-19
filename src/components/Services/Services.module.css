@@ -1,7 +1,7 @@
 .price {
     font-family: "Prata", sans-serif;
     font-size: 18px;
-    color: #9e8a78;
+    color: var(--dark_gray);
     font-weight: 700;
     position: absolute;
     top: 0;

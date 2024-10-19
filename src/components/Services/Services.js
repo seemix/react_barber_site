@@ -6,6 +6,7 @@ import { servicesData } from './servicesData';
 const Services = () => {
     return (
         <section id={'services'}>
+            <div className={'overlay'}/>
             <SectionHeader caption={'ourServices'}/>
             <div className={'cards_wrapper'}>
                 {

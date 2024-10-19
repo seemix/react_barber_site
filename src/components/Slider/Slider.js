@@ -9,14 +9,13 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 import { swiperSettings } from './swiperSettings';
-import { BookingButton, WelcomeHeader } from '../index';
 import { ALL_SLIDES, slideMapper } from './query';
-import css from './Slider.module.css';
 import { animation } from '../../assets/common';
 import { slideAppearAnimation } from './animations';
+import css from './Slider.module.css';
 
 const Slider = () => {
-    const { data, loading } = useQuery(ALL_SLIDES);
+    const { data } = useQuery(ALL_SLIDES);
 
     let slides;
     if (data) slides = slideMapper(data);
@@ -36,10 +35,6 @@ const Slider = () => {
                     </SwiperSlide>))}
                 </Swiper>
             </motion.div>}
-            <div className={css.overlay}/>
-            <div className={css.slider_welcome}>
-                {!loading && <><WelcomeHeader/><BookingButton/></>}
-            </div>
         </main>
     );
 };

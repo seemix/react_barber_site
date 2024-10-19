@@ -2,7 +2,7 @@
   "name": "react_tarining",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://levelupbalti.com",
+  "homepage": "https://levelupbalti.com/new",
   "dependencies": {
     "@apollo/client": "^3.9.5",
     "@testing-library/jest-dom": "^5.16.5",

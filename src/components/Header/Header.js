@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaInstagram } from 'react-icons/fa';
 
 import { useOutsideClick } from '../../hooks/outsideClick.js';
@@ -32,6 +32,7 @@ const Header = () => {
 
     return (
         <header className={!scroll ? css.header_wrapper : css.header_wrapper + ' ' + css.scroll}>
+        {/*<header className={css.header_wrapper}>*/}
             <div className={css.logo}/>
             <div className={css.lang_switcher_wrapper}>
                 <div>
