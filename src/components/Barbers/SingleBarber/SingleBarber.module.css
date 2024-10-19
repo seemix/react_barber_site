@@ -8,6 +8,10 @@
     gap: 25px;
 }
 
+.barber_card p {
+    color: var(--dark_gray);
+}
+
 .card_picture_wrapper {
     display: flex;
     flex-direction: column;
