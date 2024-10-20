@@ -1,10 +1,8 @@
 .barber_card {
     display: flex;
     flex-direction: row;
-    /*border-radius: 6px;*/
     overflow: hidden;
-    line-height: 1.5em;
-    padding: 20px;
+    line-height: 1.3em;
     gap: 25px;
 }
 
@@ -20,10 +18,16 @@
 
 .barber_card h2 {
     font-size: 25px;
+    text-align: left;
+}
+
+.barber_card h3 {
+    text-align: left;
+    margin-bottom: 25px;
 }
 
 .card_picture {
-    width: 300px;
+    width: 325px;
     margin: 0 auto;
     background-size: cover;
     background-position: center;
@@ -35,26 +39,19 @@
 }
 
 .barber_text h4 {
-    text-align: center;
     font-size: 15px;
-    line-height: 16px;
+    line-height: 14px;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-family: 'Inter', sans-serif;
 }
 
-.barber_text h3 {
-    line-height: 20px;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    font-size: 22px;
-    letter-spacing: .01em;
-}
 
 @media screen and  (max-width: 800px) {
     .barber_card {
         flex-direction: column;
         height: auto;
+        padding: 15px;
     }
 
     .barber_card h2 {

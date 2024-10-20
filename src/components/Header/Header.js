@@ -32,7 +32,6 @@ const Header = () => {
 
     return (
         <header className={!scroll ? css.header_wrapper : css.header_wrapper + ' ' + css.scroll}>
-        {/*<header className={css.header_wrapper}>*/}
             <div className={css.logo}/>
             <div className={css.lang_switcher_wrapper}>
                 <div>

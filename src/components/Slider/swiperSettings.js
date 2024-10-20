@@ -13,9 +13,6 @@ export const swiperSettings = {
     fadeEffect: {
         crossFade: true,
     },
-    // pagination: {
-    //     clickable: true,
-    // },
     modules: [Autoplay, EffectFade, Navigation, Pagination],
     loop: true
 }

@@ -45,7 +45,7 @@
 //     className: 'swiper_wrap'
 // }
 
-import { Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 
 export const swiperSettings = {
     autoHeight: true,
@@ -86,9 +86,13 @@ export const swiperSettings = {
             spaceBetween: 15
         }
     },
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
     loop: true,
     navigation: true,
     pagination: true,
-    modules: [Pagination, Navigation],
+    modules: [Autoplay, Pagination, Navigation],
     className: 'swiper_wrap'
 }
