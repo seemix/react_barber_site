@@ -22,26 +22,26 @@ const Contacts = () => {
                     variants={blockAnimation}
                     className={'card ' + css.contact_form}>
                     <div className={css.icon_wrapper}>
-                        <div><h3><GrLocation size={'1.2em'}/></h3></div>
-                        <div><h3>  {t('address')}</h3></div>
+                        <GrLocation size={'1.2em'}/>
+                        {t('address')}
                     </div>
                     <p> {t('streetNumber')} </p>
                     <div className={css.icon_wrapper}>
-                        <div><h3><MdPhoneIphone size={'1.2em'}/></h3></div>
-                        <div><h3>{t('phone')}</h3></div>
+                        <MdPhoneIphone size={'1.2em'}/>
+                        {t('phone')}
                     </div>
                     <p><a href={'tel:+37360233555'}> +(373) 60 233 555 </a></p>
                     <div className={css.icon_wrapper}>
-                        <div><h3><BsInstagram/></h3></div>
-                        <div><h3>Instagram</h3></div>
+                        <BsInstagram/>
+                        Instagram
                     </div>
                     <p>
                         <a target="_blank" rel="noreferrer"
                            href="https://www.instagram.com/lvlup_barbershop">@lvlup_barbershop</a>
                     </p>
                     <div className={css.icon_wrapper}>
-                        <div><h3><MdOutlineEventAvailable size={'1.2em'}/></h3></div>
-                        <div><h3>{t('workHours')}</h3></div>
+                        <MdOutlineEventAvailable size={'1.2em'}/>
+                        {t('workHours')}
                     </div>
                     <p>{t('monSat')} </p>
                     <p> {t('sun')} </p>

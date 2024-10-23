@@ -23,9 +23,9 @@ const SingleServiceCard = ({ id, icon, services }) => {
                 services.map((service, index) =>
                     <div className={css.price_item} key={index}>
                         <h3>{t(service.name)}</h3>
-                        <span className={css.time}>
+                        <div className={css.time}>
                             <SlClock/> {service.duration} {t('minutes')}
-                        </span>
+                        </div>
                     </div>)
             }
         </motion.div>

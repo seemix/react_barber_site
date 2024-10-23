@@ -34,7 +34,9 @@
 
 .time {
     margin-left: 25px;
-    display: block;
+    display: flex;
+    gap: 5px;
+    align-items: center;
     color: var(--dark_gray);
 }
 

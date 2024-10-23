@@ -14,5 +14,4 @@ export { default as Slider } from './Slider/Slider';
 export { default as SingleServiceCard } from './Services/SingleServiceCard/SingleServiceCard';
 export { default as SingleBarber } from './Barbers/SingleBarber/SingleBarber';
 export { default as TopButton } from './TopButton/TopButton';
-export { default as WelcomeHeader } from './Slider/WelcomeHeader/WelcomeHeader';
-
+export { default as WelcomeHeader } from './Main/WelcomeHeader/WelcomeHeader';
