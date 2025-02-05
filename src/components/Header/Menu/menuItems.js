@@ -5,17 +5,22 @@ export const menuItems = [
         to: 'top'
     },
     {
-        id: 1,
+      id: 1,
+      name: 'about',
+      to: 'about'
+    },
+    {
+        id: 2,
         name: 'services',
         to: 'services'
     },
     {
-        id: 2,
+        id: 3,
         name: 'barbers',
         to: 'barbers'
     },
     {
-        id: 3,
+        id: 4,
         name: 'contacts',
         to: 'contacts'
     }
