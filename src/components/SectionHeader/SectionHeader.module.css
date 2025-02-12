@@ -8,5 +8,6 @@
 .caption_top_line h4 {
     color: var(--orange);
     margin-top: 10px;
+    z-index: 1;
 }
 

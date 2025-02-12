@@ -2,7 +2,7 @@ import React from 'react';
 import { useQuery } from '@apollo/client';
 
 import { ALL_SLIDES, slideMapper } from '../Slider/query';
-import { Barbers, Contacts, Footer, Header, Main, Services, Slider, TopButton } from '../index';
+import { About, Barbers, Contacts, Footer, Header, Main, Services, Slider, TopButton } from '../index';
 
 const Layout = () => {
     const { data, loading } = useQuery(ALL_SLIDES);
@@ -14,6 +14,7 @@ const Layout = () => {
             <Header/>
             <Slider slides={slides}/>
             <Main loading={loading}/>
+            <About/>
             <Services/>
             <Barbers/>
             <Contacts/>

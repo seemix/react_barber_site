@@ -1,3 +1,4 @@
+export { default as About } from './About/About';
 export { default as Barbers } from './Barbers/Barbers';
 export { default as BookingButton } from './BookingButton/BookingButton';
 export { default as BurgerButton } from './Header/BurgerButton/BurgerButton';
