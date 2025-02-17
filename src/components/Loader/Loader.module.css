@@ -3,6 +3,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     position: fixed;
+    z-index: 3;
 }
 
 .loader {
@@ -30,33 +31,27 @@
     }
     50% {
         opacity: 1;
-        /*scale: 1;*/
         filter: blur(0);
     }
     100% {
         opacity: .2;
-        /*scale: .67;*/
         filter: blur(1px);
-
     }
 }
 
 @keyframes fade-in {
     0% {
         opacity: .2;
-        /*scale: .67;*/
         filter: blur(1px);
     }
 
     25% {
         opacity: 1;
-        /*scale: 1;*/
         filter: blur(0);
 
     }
     50% {
         opacity: .2;
-        /*scale: .67;*/
         filter: blur(1px);
     }
     100% {
@@ -77,10 +72,6 @@
     z-index: 21;
 }
 
-/*.loader_spin_dark {*/
-/*    border: solid 4px var(--orange);*/
-/*    border-top: solid 5px transparent;*/
-/*}*/
 
 @keyframes spin {
     0% {
