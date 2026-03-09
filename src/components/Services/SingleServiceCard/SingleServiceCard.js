@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 
 import { blockAnimation } from './animations';
 import { animation } from '../../../assets/common';
+
 import css from './SingleServiceCard.module.css';
 
 const SingleServiceCard = ({ id, icon, services }) => {
